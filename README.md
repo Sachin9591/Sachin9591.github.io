@@ -11,13 +11,12 @@ Welcome to my personal portfolio website! This space showcases my journey as a s
   - IBM Certifications in **Machine Learning with Python** and **Data Visualization with Python**
 
 - **Projects**:  
-  Featured projects include:  
   - **Stock Analysis Using Machine Learning**: Applying Python-based data science techniques for predictive stock insights.  
   - **Launch Site Distance Mapping**: Calculated coastal distances with Python and Folium, emphasizing geospatial analysis.  
   - **Embedded Systems Innovations**: Contributed to voltage stabilizer technologies and IoT applications.
 
 - **Skills**:  
-  Proficient in **Python**, **SQL**, **NumPy**, **ASP.NET MVC**, and **Django**, with expertise in advanced concepts like **Decorators**, **Generators**, and **Metaclasses**.
+  - Proficient in **Python**, **SQL**, **NumPy**, **ASP.NET MVC**, and **Django**, with expertise in advanced concepts like **Decorators**, **Generators**, and **Metaclasses**.
 
 ## Purpose of This Website
 This website is designed to serve as a dynamic platform for:
