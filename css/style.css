@@ -5,7 +5,10 @@
 */
 
 * {
-	margin:0 auto;
+	border: none;
+    	margin: 0px;
+    	padding: 0px;
+    	background: none;
 }
 
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-ce-55');
