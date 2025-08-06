@@ -800,6 +800,67 @@ ul.nav li.active a:before {
 	position:relative;
 	top:50px;
 }
+/*Experience-stylesheets-include-here*/
+#experience {
+	text-align:center;
+	padding:2% 0%;
+}
+#experience .nav-tabs {
+	display: inline-block;
+	margin-top:20px;
+}
+.tab p {
+	text-align:justify;
+}
+#experience .nav-tabs > li.active > a, #experience .nav-tabs > li.active > a:hover, #experience .nav-tabs > li.active > a:focus {
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .26);
+	border-bottom:2px solid #e73131;
+	background:#f8f8f8;
+}
+#experience .nav-tabs > li > a {
+	color:#555;
+	margin-right:0;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .26);
+	background-color: #fff;
+	border-right: 1px solid #e0e0e0;
+	border-radius:0px;
+	border-bottom:1px solid #FFFFFF;
+	width: 380px;
+	padding: 0;
+	height: 50px;
+	line-height: 50px;
+	font-size: 15px;
+}
+#experience .nav-tabs > li > a i.fa {
+	font-size:25px;
+}
+#experience .nav-tabs > li.active > a  {
+	color:#e73131;
+}
+#experience .nav-tabs > li > a:hover {
+	border-color:transparent;
+	border-right: 1px solid #e0e0e0;
+}
+#experience p.feat-sec-1 {
+	padding-top:10px;
+}
+#experience .tab-content .feat-sec {
+	margin-top:10px;
+}
+#experience .tab-content h5 {
+	text-align:left;
+	font-weight:bolder;
+}
+#experience .tab-content .line {
+	float:left;
+}
+.tab {
+	margin-top:20px;
+}
+.tab-img {
+	position:relative;
+	top:50px;
+}
 /*Portfolio-stylesheets-include-here*/
 #portfolio {
 	padding: 2% 0%;
