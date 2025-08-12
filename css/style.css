@@ -501,7 +501,7 @@ ul.nav li.active a:before {
 }
 /*Slider-stylesheets-include-here*/
 
-	#home-carousel .item {
+#home-carousel .item {
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size:cover;
@@ -567,17 +567,112 @@ ul.nav li.active a:before {
 	-ms-transition: 300ms;
 	transition: 300ms;
 }
+
+.settings-panel-right {
+	background-color: #e73131;
+	color: #fff;
+	font-size: 32px;
+	height: 40px;
+	line-height: 40px;
+	margin-top: -20px;
+	position: fixed;
+	text-align: center;
+	top: 20%;
+	width: 32px;
+	z-index: 999;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	-o-transition: 300ms;
+	-ms-transition: 300ms;
+	transition: 300ms;
+	cursor: pointer;
+}
 .home-carousel-left {
 	left:-32px;
 }
-.home-carousel-right {
+.home-carousel-right, .settings-panel-right {
 	right:-32px;
 }
 #home-carousel:hover .home-carousel-left {
 	left:0;
 }
-#home-carousel:hover .home-carousel-right {
+#home-carousel:hover .home-carousel-right, #home-carousel:hover .settings-panel-right {
 	right:0;
+}
+
+/* Settings Panel */
+.settings-side-panel {
+	position: fixed;
+	top: 60px;
+	right: -300px;
+	width: 300px;
+	height: 100%;
+	background-color: #fff;
+	box-shadow: -2px 0 6px rgba(0,0,0,0.2);
+	padding: 20px;
+	transition: right 0.3s ease-in-out;
+	z-index: 1000;
+	overflow-y: auto;
+}
+
+.settings-close-btn {
+	position: absolute;
+	top: 10px;
+	right: 14px; /* moved from left to right */
+	font-size: 25px;
+	color: #333;
+	cursor: pointer;
+}
+
+#overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.4);
+	display: none;
+	z-index: 998;
+}
+
+.settings-close-btn:hover {
+    color: #e73131;
+}
+
+.settings-panel-content {
+    background: #f5f5f5;
+    border-right: 1px solid #ccc;
+}
+
+.radio-label {
+    display: flex;
+	flex-direction: column; /* stack items vertically */
+	align-items: center;   /* center horizontally */
+	margin: 10px;
+    cursor: pointer;
+}
+
+.radio-label input[type="radio"] {
+	margin-bottom: 5px; /* space between button and text */
+}
+
+.color-palette {
+    display: none; /* Force to block */
+    margin: 10px 0;
+}
+
+.swatch {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: border 0.2s ease;
+}
+
+.swatch:hover {
+    border-color: #333;
 }
 /* Carousel animation */
 
@@ -808,27 +903,29 @@ ul.nav li.active a:before {
 #experience .nav-tabs {
 	display: inline-block;
 	margin-top:20px;
+	border: none;
 }
 .tab p {
 	text-align:justify;
 }
 #experience .nav-tabs > li.active > a, #experience .nav-tabs > li.active > a:hover, #experience .nav-tabs > li.active > a:focus {
 	box-shadow: 0 1px 4px rgba(0, 0, 0, .26);
-	border-bottom:2px solid #e73131;
+	border:2px solid #e73131;
 	background:#f8f8f8;
 }
 #experience .nav-tabs > li > a {
 	color:#555;
-	margin-right:0;
+	margin-right:5px;
+	margin-bottom: 5px;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, .26);
 	background-color: #fff;
 	border-right: 1px solid #e0e0e0;
-	border-radius:0px;
+	border-radius:25px;
 	border-bottom:1px solid #FFFFFF;
-	width: 380px;
+	width: 360px;
 	padding: 0;
-	height: 50px;
-	line-height: 50px;
+	height: 60px;
+	line-height: 60px;
 	font-size: 15px;
 }
 #experience .nav-tabs > li > a i.fa {
@@ -864,7 +961,7 @@ ul.nav li.active a:before {
 /*Portfolio-stylesheets-include-here*/
 #portfolio {
 	padding: 2% 0%;
-	background: #f5f5f5;
+	background-color: #f5f5f5;
 	text-align:center;
 }
 #portfolio .portfolio-filter {
