@@ -263,7 +263,7 @@ $(document).ready(function() {
   	     Parallex-javascript
   	=============================================== */
 	
-	$('#testimonials').stellar();
+	/*$('#testimonials').stellar();
 $('#slider-parallax').stellar();
 
 
@@ -279,7 +279,7 @@ $('#slider-parallax').stellar();
 
     });
 
-
+*/
 	 /* ==============================================
   	      Index-05-text-Slider
   	=============================================== */
@@ -344,3 +344,93 @@ $('#slider-parallax').stellar();
 //     });    
 //   });
 // });
+
+/* ==============================================
+      Settings Panel
+=============================================== */
+// Open panel
+function openSettingsPanel() {
+  $("#settings-panel").css("right", "0");
+  $("#overlay").show();
+}
+
+// Close panel
+function closeSettingsPanel() {
+  $("#settings-panel").css("right", "-300px");
+  $("#overlay").hide();
+}
+
+// Show color palette when "Colors" radio is clicked
+$(document).ready(function() {
+  // When radio option changes
+  $('input[name="settingsOption"]').on('change', function() {
+      if ($(this).val() === 'colors') {
+          $('.color-palette').show();
+      } else {
+          $('.color-palette').hide();
+      }
+  });
+
+  // Show palette if "Colors" is checked on load
+  if ($('input[name="settingsOption"][value="colors"]').is(':checked')) {
+      $('.color-palette').show();
+  } else {
+      $('.color-palette').hide();
+  }
+});
+
+function isDarkColor(hexColor) {
+  // Remove '#' if present
+  hexColor = hexColor.replace('#', '');
+
+  // Convert 3-digit hex to 6-digit using jQuery $.map
+  if (hexColor.length === 3) {
+    hexColor = $.map(hexColor.split(''), function(c) {
+      return c + c;
+    }).join('');
+  }
+
+  // Parse RGB values
+  var r = parseInt(hexColor.substr(0, 2), 16);
+  var g = parseInt(hexColor.substr(2, 2), 16);
+  var b = parseInt(hexColor.substr(4, 2), 16);
+
+  // Calculate brightness
+  var brightness = (r * 299 + g * 587 + b * 114) / 1000;
+
+  // Return true if dark
+  return brightness < 128;
+}
+
+// Handle swatch clicks
+$(".swatch").on("click", function () {
+  var bgColor = $(this).data("color");
+
+  // Store the chosen color in localStorage
+  localStorage.setItem("selectedSwatchColor", bgColor);
+
+  applyTheme(bgColor);
+});
+
+// On page load, restore saved swatch
+var savedColor = localStorage.getItem("selectedSwatchColor");
+if (savedColor) {
+    applyTheme(savedColor);
+}
+
+function applyTheme(bgColor) {
+  $("body").css("background-color", bgColor);
+
+  if (isDarkColor(bgColor)) {
+      $("body, p, #about h3, .contact-form li h6 strong").css("color", "#fff");
+      $("#fun-facts").css("background-color", "#fff");
+      $("#fun-facts h6, #settings-panel h3").css("color", "#666");
+      $(".media-heading, .tab-content h5").css("color", "#e73131");
+      $("#portfolio").css("background-color", bgColor);
+  } else {
+    $("body, p, #about h3, .contact-form li h6 strong").css("color", "#666");
+      $("#fun-facts").css("background-color", "#f8f8f8");
+      $("#fun-facts h6").css("color", "#666");
+      $("#portfolio").css("background-color", "#f5f5f5");
+  }
+}
