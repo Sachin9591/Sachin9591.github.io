@@ -422,8 +422,9 @@ function applyTheme(bgColor) {
   $("body").css("background-color", bgColor);
 
   if (isDarkColor(bgColor)) {
-      $("body, p, #about h3, .contact-form li h6 strong .bg-sec p").css("color", "#fff");
+      $("body, p, #about h3, .contact-form li h6 strong").css("color", "#fff");
       $("#fun-facts").css("background-color", "#fff");
+      $(".bg-sec p, .carousel-caption p").css("color","#fff");
       $("#fun-facts h6, #settings-panel h3").css("color", "#666");
       $(".media-heading, .tab-content h5").css("color", "#e73131");
       $("#portfolio").css("background-color", bgColor);
@@ -431,8 +432,9 @@ function applyTheme(bgColor) {
     $("body, p, #about h3, .contact-form li h6 strong").css("color", "#666");
       $("#fun-facts").css("background-color", "#f8f8f8");
       $("#fun-facts h6").css("color", "#666");
-      $(".bg-sec p").css("color","#fff");
+      $(".bg-sec p, .carousel-caption p").css("color","#fff");
       $("#portfolio").css("background-color", "#f5f5f5");
   }
 }
+
 
