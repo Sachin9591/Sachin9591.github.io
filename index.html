@@ -110,10 +110,48 @@
               </div>
             </div>
           </div>
+          <a class="settings-panel-right" onclick="openSettingsPanel()"><i class="fa fa-gear"></i></a>
           <a class="home-carousel-left" href="#home-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a> <a class="home-carousel-right" href="#home-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a> </div>
       </div>
       <!--/#home-carousel-->
     </section>
+    <!-- Settings Panel Start -->
+    <div id="settings-panel" class="settings-side-panel">
+      <span class="settings-close-btn" onclick="closeSettingsPanel()">&times;</span>
+      <div class="heading">
+        <h3>SETTIN<span>GS</span></h3>
+      </div>
+      <div class="settings-panel-content">
+        <label class="radio-label">
+          <input type="radio" name="settingsOption" value="colors">
+          <span>Colors</span>
+        </label>
+        
+        <label class="radio-label">
+          <input type="radio" name="settingsOption" value="tooltips">
+          <span>Tooltips</span>
+        </label>
+        
+        <label class="radio-label">
+          <input type="radio" name="settingsOption" value="animations">
+          <span>Animations</span>
+        </label>
+      </div>
+      
+      <div class="color-palette">
+        <div class="swatch" style="background: #ffffff;" data-color="#ffffff"></div>
+        <div class="swatch" style="background: #000000;" data-color="#000000"></div>
+        <div class="swatch" style="background: #5f035f;" data-color="#5f035f"></div>
+        <div class="swatch" style="background: #015f04;" data-color="#015f04"></div>
+        <div class="swatch" style="background: #013b6b;" data-color="#013b6b"></div>
+        <div class="swatch" style="background: #d67faf;" data-color="#d67faf"></div>
+        <div class="swatch" style="background: #ca86d6;" data-color="#ca86d6"></div>
+      </div>
+    </div>
+
+    <div id="overlay" onclick="closeSettingsPanel()"></div>
+    <!-- Settings Panel Start -->
+
     <!--About-Section-Start-->
     <section id="about">
       <div class="container">
@@ -806,7 +844,7 @@
             <h4>CONTACT IN<span>FO</span></h4>
             <ul class="contact-form">
               <li><i class="fa fa-map-marker"></i>
-                <h6><strong>Address:</strong> Samethadka, Puttur, Karnataka</h6>
+                <h6><strong>Address:</strong> <a href="https://maps.app.goo.gl/XgpFGLDWNPyX7zsg7" target="_blank">Samethadka, Puttur, Karnataka</a></h6>
               </li>
               <li><i class="fa fa-envelope"></i>
                 <h6><strong>Mail Us:</strong> <a href="mailto:skumar10031993@gmail.com" target="_blank">skumar10031993@gmail.com</a></h6>
@@ -847,7 +885,7 @@
               </div>
               <a class="btn-send col-md-12 col-sm-12 col-xs-12" href="#" id="btn_contact_submit">Send Now</a>
             </form> -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d972.8341751636453!2d75.2161342!3d12.7566326!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1733375768622!5m2!1sen!2sin" 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d972.8336423466303!2d75.21542686949071!3d12.75677120722291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDQ1JzI0LjQiTiA3NcKwMTInNTcuOSJF!5e0!3m2!1sen!2sin!4v1754887784504!5m2!1sen!2sin"
             width="600" height="310" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
