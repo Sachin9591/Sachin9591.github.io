@@ -360,25 +360,6 @@ function closeSettingsPanel() {
   $("#overlay").hide();
 }
 
-// Show color palette when "Colors" radio is clicked
-$(document).ready(function() {
-  // When radio option changes
-  $('input[name="settingsOption"]').on('change', function() {
-      if ($(this).val() === 'colors') {
-          $('.color-palette').show();
-      } else {
-          $('.color-palette').hide();
-      }
-  });
-
-  // Show palette if "Colors" is checked on load
-  if ($('input[name="settingsOption"][value="colors"]').is(':checked')) {
-      $('.color-palette').show();
-  } else {
-      $('.color-palette').hide();
-  }
-});
-
 function isDarkColor(hexColor) {
   // Remove '#' if present
   hexColor = hexColor.replace('#', '');
@@ -425,7 +406,7 @@ function applyTheme(bgColor) {
       $("body, p, #about h3, .contact-form li h6 strong").css("color", "#fff");
       $("#fun-facts").css("background-color", "#fff");
       $(".bg-sec p, .carousel-caption p").css("color","#fff");
-      $("#fun-facts h6, #settings-panel h3").css("color", "#666");
+      $("#fun-facts h6, #settings-panel h3, #settings-panel h5").css("color", "#666");
       $(".media-heading, .tab-content h5").css("color", "#e73131");
       $("#portfolio").css("background-color", bgColor);
   } else {
@@ -436,5 +417,3 @@ function applyTheme(bgColor) {
       $("#portfolio").css("background-color", "#f5f5f5");
   }
 }
-
-
