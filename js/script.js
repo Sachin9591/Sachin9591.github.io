@@ -8,23 +8,23 @@
  /* ==============================================
   	 Main-Slider
   	=============================================== */ 
-$(document).ready(function() {
- 
-  var owl = $("#owl-slider");
- 
-  owl.owlCarousel({
- autoPlay: 3000, //Set AutoPlay to 3 seconds
-    singleItem : true,
-    transitionStyle : "fade"
-  });
- 
-});
+    $(document).ready(function() {
+    
+        var owl = $("#owl-slider");
+        
+        owl.owlCarousel({
+        autoPlay: 3000, //Set AutoPlay to 3 seconds
+            singleItem : true,
+            transitionStyle : "fade"
+        });
+    
+    });
 
 
  /* ==============================================
   	  Progress Bar
   	=============================================== */ 
-		$('.experience').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
+    $('.experience').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
 		if (visible) {
 			$.each($('div.progress-bar'),function(){
 				$(this).css('width', $(this).attr('aria-valuemax')+'%');
@@ -32,7 +32,6 @@ $(document).ready(function() {
 			$(this).unbind('inview');
 		}
 	});
-
 	
  /* ==============================================
   	 Preloader
@@ -57,24 +56,23 @@ $(document).ready(function() {
   	  WOW Javascripts 
   	=============================================== */ 
 
- new WOW().init();
+    new WOW().init();
 
  /* ==============================================
   	  Testimonials
   	=============================================== */ 
 
-
-$(document).ready(function() {
- 
-  var owl = $("#owl-testi");
- 
-  owl.owlCarousel({
-    autoPlay: 3000, //Set AutoPlay to 3 seconds
-    singleItem : true,
-    transitionStyle : "fade"
-  });
- 
-});
+    $(document).ready(function() {
+    
+        var owl = $("#owl-testi");
+        
+        owl.owlCarousel({
+            autoPlay: 3000, //Set AutoPlay to 3 seconds
+            singleItem : true,
+            transitionStyle : "fade"
+        });
+    
+    });
  
  
  /* ==============================================
@@ -83,18 +81,18 @@ $(document).ready(function() {
 	
 	
     $(function() {
-      $('a.scroll').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top -50
-            }, 1000);
-            return false;
-          }
-        }
-      });
+        $('a.scroll').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top -50
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
     });
 	
 
@@ -104,7 +102,7 @@ $(document).ready(function() {
   	=============================================== */ 
 	
 	
- $(window).bind('scroll', function() {
+    $(window).bind('scroll', function() {
         var navHeight = $(window).height() - 100;
         if ($(window).scrollTop() > navHeight) {
             $('.navbar').addClass('on');
@@ -119,8 +117,8 @@ $(document).ready(function() {
   	=============================================== */ 
 	
 	$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
+        $('[data-toggle="tooltip"]').tooltip()
+    })
 	
 
  /* ==============================================
@@ -181,7 +179,7 @@ $(document).ready(function() {
             [1600, 5]
         ],
         pagination: false,
-       autoPlay: 3000, //Set AutoPlay to 3 seconds
+        autoPlay: 3000, //Set AutoPlay to 3 seconds
 
     });
 	
@@ -208,104 +206,140 @@ $(document).ready(function() {
 	});
 	
 	
-/*====================================
-    Fullscreen burger menu
- ======================================*/
-	  $(".menu-trigger, .mobilenav").click(function () {
-    $(".mobilenav").fadeToggle(500);
-  });
-  $(".menu-trigger, .mobilenav").click(function () {
-    $(".top-menu").toggleClass("top-animate");
-    $(".mid-menu").toggleClass("mid-animate");
-    $(".bottom-menu").toggleClass("bottom-animate");
-  });
+    /*====================================
+        Fullscreen burger menu
+    ======================================*/
+    $(".menu-trigger, .mobilenav").click(function () {
+        $(".mobilenav").fadeToggle(500);
+    });
+    $(".menu-trigger, .mobilenav").click(function () {
+        $(".top-menu").toggleClass("top-animate");
+        $(".mid-menu").toggleClass("mid-animate");
+        $(".bottom-menu").toggleClass("bottom-animate");
+    });
 
 
-  /* ========================================================================
-     On click menu item animate to the section
-   ========================================================================== */
-  $(".mobilenav li, .back-to-top").on('click', function() {
-    var target = $(this).data('rel');
-    var $target = $(target);
-    $('html, body').stop().animate({
-        'scrollTop': $target.offset().top
-    }, 900, 'swing');
-  });
+    /* ========================================================================
+        On click menu item animate to the section
+    ========================================================================== */
+    $(".mobilenav li, .back-to-top").on('click', function() {
+        var target = $(this).data('rel');
+        var $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing');
+    });
 
 
 	/*====================================
        Index-03-Main-Slider
     ======================================*/
 	
-$(document).ready(function() {
- 
-  $("#owl-main-slider").owlCarousel({
- 
-       autoPlay: 3000, //Set AutoPlay to 3 seconds
-      slideSpeed : 300,
-      paginationSpeed : 400,
-      singleItem:true
- 
-      // "singleItem:true" is a shortcut for:
-      // items : 1, 
-      // itemsDesktop : false,
-      // itemsDesktopSmall : false,
-      // itemsTablet: false,
-      // itemsMobile : false
- 
-  });
- 
-});
-	
-	
+    $(document).ready(function() {
+    
+        $("#owl-main-slider").owlCarousel({
+        
+            autoPlay: 3000, //Set AutoPlay to 3 seconds
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            singleItem:true
+        
+            // "singleItem:true" is a shortcut for:
+            // items : 1, 
+            // itemsDesktop : false,
+            // itemsDesktopSmall : false,
+            // itemsTablet: false,
+            // itemsMobile : false
+        
+        });
+    
+    });
+
+
+    /*=======================================
+        Role Text Slider
+    ========================================*/
+    $(document).ready(function () {
+        const roles = ["Data Scientist", "Senior Software Engineer", "Freelancer"];
+
+        let roleIndex = 0;
+        let charIndex = roles[0].length; // start from existing text
+        const typingSpeed = 80;
+        const pauseAfterTyping = 2000;
+
+        function eraseRole() {
+            if (charIndex > 0) {
+                $("#role-text").text(
+                roles[roleIndex].substring(0, charIndex - 1)
+                );
+                charIndex--;
+                setTimeout(eraseRole, 50);
+            } else {
+                roleIndex = (roleIndex + 1) % roles.length;
+                typeRole();
+            }
+        }
+
+        function typeRole() {
+            if (charIndex < roles[roleIndex].length) {
+                $("#role-text").text(
+                roles[roleIndex].substring(0, charIndex + 1)
+                );
+                charIndex++;
+                setTimeout(typeRole, typingSpeed);
+            } else {
+                setTimeout(eraseRole, pauseAfterTyping);
+            }
+        }
+
+        setTimeout(eraseRole, pauseAfterTyping); // start cycle
+    });	
 	
 	 /* ==============================================
-  	     Parallex-javascript
+  	    //  Parallex-javascript
   	=============================================== */
 	
-	/*$('#testimonials').stellar();
-$('#slider-parallax').stellar();
+    /*$('#testimonials').stellar();
+    $('#slider-parallax').stellar();
 
 
     $(function(){
 
-      $.stellar({
+        $.stellar({
 
         horizontalScrolling: false,
 
         verticalOffset: 40
 
-      });
+        });
 
-    });
+    });*/
 
-*/
-	 /* ==============================================
+/*  ===============================================
   	      Index-05-text-Slider
   	=============================================== */
 	$(document).ready(function() {
  
-  $("#owl-text-slider").owlCarousel({
- 
-      autoPlay: 3000, //Set AutoPlay to 3 seconds
-      slideSpeed : 300,
-      paginationSpeed : 400,
-      singleItem:true
- 
-      // "singleItem:true" is a shortcut for:
-      // items : 1, 
-      // itemsDesktop : false,
-      // itemsDesktopSmall : false,
-      // itemsTablet: false,
-      // itemsMobile : false
- 
-  });
- 
-});
+        $("#owl-text-slider").owlCarousel({
+        
+            autoPlay: 3000, //Set AutoPlay to 3 seconds
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            singleItem:true
+        
+            // "singleItem:true" is a shortcut for:
+            // items : 1, 
+            // itemsDesktop : false,
+            // itemsDesktopSmall : false,
+            // itemsTablet: false,
+            // itemsMobile : false
+        
+        });
+    });
 
-/* ==============================================
+/*  ===========================================
       Contact Form - Submission
-=============================================== */
+    =========================================== */
 // $(document).ready(function () {
 //   // Handle form submission
 //   $('#main-contact-form').on('submit', function (e) {
@@ -345,75 +379,133 @@ $('#slider-parallax').stellar();
 //   });
 // });
 
-/* ==============================================
+/*  =============================================
       Settings Panel
-=============================================== */
-// Open panel
-function openSettingsPanel() {
-  $("#settings-panel").css("right", "0");
-  $("#overlay").show();
-}
+    =========================================== */
+    // Open panel
+    function openSettingsPanel() {
+        $("#settings-panel").css("right", "0");
+        $("#overlay").show();
+    }
 
-// Close panel
-function closeSettingsPanel() {
-  $("#settings-panel").css("right", "-300px");
-  $("#overlay").hide();
-}
+    // Close panel
+    function closeSettingsPanel() {
+        $("#settings-panel").css("right", "-300px");
+        $("#overlay").hide();
+    }
 
-function isDarkColor(hexColor) {
-  // Remove '#' if present
-  hexColor = hexColor.replace('#', '');
+    function isDarkColor(hexColor) {
+        // Remove '#' if present
+        hexColor = hexColor.replace('#', '');
 
-  // Convert 3-digit hex to 6-digit using jQuery $.map
-  if (hexColor.length === 3) {
-    hexColor = $.map(hexColor.split(''), function(c) {
-      return c + c;
-    }).join('');
-  }
+        // Convert 3-digit hex to 6-digit using jQuery $.map
+        if (hexColor.length === 3) {
+            hexColor = $.map(hexColor.split(''), function(c) {
+            return c + c;
+            }).join('');
+        }
 
-  // Parse RGB values
-  var r = parseInt(hexColor.substr(0, 2), 16);
-  var g = parseInt(hexColor.substr(2, 2), 16);
-  var b = parseInt(hexColor.substr(4, 2), 16);
+        // Parse RGB values
+        var r = parseInt(hexColor.substr(0, 2), 16);
+        var g = parseInt(hexColor.substr(2, 2), 16);
+        var b = parseInt(hexColor.substr(4, 2), 16);
 
-  // Calculate brightness
-  var brightness = (r * 299 + g * 587 + b * 114) / 1000;
+        // Calculate brightness
+        var brightness = (r * 299 + g * 587 + b * 114) / 1000;
 
-  // Return true if dark
-  return brightness < 128;
-}
+        // Return true if dark
+        return brightness < 128;
+    }
 
-// Handle swatch clicks
-$(".swatch").on("click", function () {
-  var bgColor = $(this).data("color");
+    // Handle swatch clicks
+    $(".swatch").on("click", function () {
+        var bgColor = $(this).data("color");
 
-  // Store the chosen color in localStorage
-  localStorage.setItem("selectedSwatchColor", bgColor);
+        // Store the chosen color in localStorage
+        localStorage.setItem("selectedColor", bgColor);
 
-  applyTheme(bgColor);
-});
+        applyTheme(bgColor);
+    });
 
-// On page load, restore saved swatch
-var savedColor = localStorage.getItem("selectedSwatchColor");
-if (savedColor) {
-    applyTheme(savedColor);
-}
+    // On page load, restore saved swatch
+    var savedColor = localStorage.getItem("selectedColor");
+    if (savedColor) {
+        applyTheme(savedColor);
+    }
 
-function applyTheme(bgColor) {
-  $("body").css("background-color", bgColor);
+    function applyTheme(bgColor) {
+        $("body").css("background-color", bgColor);
 
-  if (isDarkColor(bgColor)) {
-      $("body, p, #about h3, .contact-form li h6 strong").css("color", "#fff");
-      $("#fun-facts").css("background-color", "#fff");
-      $(".bg-sec p, .carousel-caption p").css("color","#fff");
-      $("#fun-facts h6, #settings-panel h3, #settings-panel h5").css("color", "#666");
-      $(".media-heading, .tab-content h5").css("color", "#e73131");
-      $("#portfolio").css("background-color", bgColor);
-  } else {
-    $("body, p, #about h3, .contact-form li h6 strong").css("color", "#666");
-      $("#fun-facts").css("background-color", "#f8f8f8");
-      $("#fun-facts h6").css("color", "#666");
-      $(".bg-sec p, .carousel-caption p").css("color","#fff");
-      $("#portfolio").css("background-color", "#f5f5f5");
-  }
-}
+        if (isDarkColor(bgColor)) {
+            $("body, p, #about h3, .contact-form li h6 strong").css("color", "#fff");
+            $("#fun-facts").css("background-color", "#fff");
+            $(".bg-sec p, .carousel-caption p").css("color","#fff");
+            $("#fun-facts h6, #settings-panel h3, #settings-panel h5").css("color", "#666");
+            $(".media-heading, .tab-content h5").css("color", "#e73131");
+            $("#portfolio").css("background-color", bgColor);
+        } else {
+            $("body, p, #about h3, .contact-form li h6 strong, #fun-facts h6").css("color", "#666");
+            $("#fun-facts").css("background-color", "#f8f8f8");
+            $(".bg-sec p, .carousel-caption p").css("color","#fff");
+            $("#portfolio").css("background-color", "#f5f5f5");
+        }
+        $(".carousel-caption span").css("color", "#e73131");
+    }
+
+
+    // Animation Effects
+    $(document).ready(function () {
+        let savedAnimation = localStorage.getItem('selectedAnimation');
+
+        if(savedAnimation){
+            $(".animate_target").each(function () {
+            $(this).css('animatiion', 'none');
+            this.offsetWidth;
+            $(this).css('animation', `${animationName} 1s ease-in-out`);
+            });
+        }
+    });
+
+    $(".animate_swatch").on("click", function () {
+        var animationName = $(this).data("animate");
+
+        // Store the chosen color in localStorage
+        localStorage.setItem("selectedAnimation", animationName);
+
+        $(".anime_target").each(function () {
+            $(this).css('animatiion', 'none');
+            this.offsetWidth;
+            $(this).css('animation', `${animationName} 1s ease-in-out`);
+        });
+    });
+
+
+ /* ==============================================
+        Donut Chart
+    ============================================ */
+    $(document).ready(function () {
+        $('.donut-chart').each(function () {
+            const value = parseInt($(this).find('span').text(), 10);
+            // IMPORTANT: native style API
+            this.style.setProperty('--value', value);
+        });
+    });
+
+/* ==============================================
+       Spoken Language Star Ratings
+    ============================================ */
+    $(document).ready(function() {
+        $('.stars-inner').each(function() {
+            var $inner = $(this);
+            var $percentSpan = $inner.find('span');
+            // Get percentage value
+            var percent = parseInt($percentSpan.text());
+            // Set width of stars-inner
+            $inner.css('width', percent + '%');
+            // Optional: hide the percentage text
+            $percentSpan.hide();
+        });
+    });
+
+
+
