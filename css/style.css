@@ -963,6 +963,9 @@ ul.nav li.active a:before {
 #features-sec .media.service-box:first-child {
 	margin-top: 80px;
 }
+#features-sec .media.service-box:nth-child { 
+    margin-top: 80px;
+}
 #services {
 	padding: 100px 0 75px;
 }
