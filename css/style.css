@@ -418,7 +418,7 @@ strong {
 	font-weight:bolder;
 }
 span {
-	color: var(--primary-color);
+	color: var(--linear-gradient-color);
 }
 .space {
 	margin:30px 0px;
