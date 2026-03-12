@@ -366,7 +366,7 @@ body {
 	z-index: 9999;
 }
 
-#pre-status, .preload-placeholder {
+/*#pre-status, .preload-placeholder {
 	background-image:url(../preloader.gif);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -377,7 +377,24 @@ body {
 	top: 32%;
 	width: 296px;
 }
+*/
+#pre-status, .preload-placeholder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    margin: -30px 0 0 -30px;
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
 
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 .preload-placeholder {
 	background: none;
 	left: 0;
