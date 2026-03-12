@@ -385,8 +385,8 @@ body {
     width: 60px;
     height: 60px;
     margin: -30px 0 0 -30px;
-    border: 6px solid #f3f3f3;
-    border-top: 6px solid #3498db;
+    border: 6px solid var(--gray-light-color);
+    border-top: 6px solid var(--primary-color);
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }
