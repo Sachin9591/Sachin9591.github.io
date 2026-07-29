@@ -35,6 +35,10 @@
             <script src="js/html5shiv.js"></script>
             <script src="js/respond.min.js"></script>
         [endif]-->
+        <!-- Paypal API Test Credentials -->
+        <script src="https://www.paypal.com/sdk/js?client-id=AahLDdxi7_o65_Xuu9B_xohIinGe6BsM8utZpAncZadUMK91I7uF11Q_IeWjzk9X7kEQFikwJSsCjyTY&currency=USD"></script>
+        <!-- Paypal API Live Credentials -->
+        <!-- <script src="https://www.paypal.com/sdk/js?client-id=AaCrteQ5aeXrp5kfmmJhcGdjxpVTXhwOXUyCIysaFo_Jme5DTtnoAg1G-uMMgDbN-CnudIleSU6nSXfe&currency=USD"></script> -->
     </head>
 
     <body data-spy="scroll" data-target=".navbar-default" data-offset="100">
@@ -61,15 +65,23 @@
                             <ul class="nav navbar-nav">
                                 <li class="active"><a class="scroll" href="#menu">Home</a></li>
                                 <li><a class="scroll" href="#about">About</a></li>
-                                <li><a class="scroll" href="#service">Skills</a></li>
+                                <li><a class="scroll" href="#skills">Skills</a></li>
                                 <li><a class="scroll" href="#experience">Experience</a></li>
+                                <li><a class="scroll" href="#service">Projects</a></li>
                                 <li><a class="scroll" href="#features">Portfolio</a></li>
+                                <!-- <li><a class="scroll" href="#projects">Projects</a></li> -->
                                 <!-- <li><a class="scroll" href="#education">Education</a></li>
                                 <li><a class="scroll" href="#portfolio">Portfolio</a></li> -->
                                 <!-- <li><a class="scroll" href="#pricing">Pricing</a></li> -->
                                 <!-- <li><a class="scroll" href="#team">Certificates</a></li> -->
                                 <!-- <li><a class="scroll" href="#blog">Blog</a></li> -->
                                 <li><a class="scroll" href="#contact">Contact</a></li>
+                                <!-- <li class="cart-icon">
+                                    <a href="#">
+                                        <i class="fa fa-cart-plus"></i>
+                                        <span id="cart-count">0</span>
+                                    </a>
+                                </li> -->
                             </ul>
                         </div>
                     </div>
@@ -86,8 +98,8 @@
                             <div class="row">
                                 <div class="col-md-8 col-sm-6 col-xs-8">
                                     <h1>Hi, I'm Sachin Kumar B</h1>
-                                    <h3>And I'm a <span id="role-text">Data Scientist</span></h3>
-                                    <p>Python Developer | Data Science & Machine Learning | SQL, Django, Pandas, NumPy | IBM Data Science Certified | Bengaluru</p>
+                                    <h3>And I'm a <span id="role-text">Senior Data Engineer</span></h3>
+                                    <p>Python, Advanced SQL, PySpark, AWS Cloud, ETL/ELT Pipelines | Multi-Terabyte Data Pipelines & Warehousing | Bengaluru</p>
                                     <div class="cv-down-btn">  
                                         <a class="btn-down-cv" href="#contact">Get in Touch</a>
                                         <a class="btn-down-cv" href="https://www.linkedin.com/in/sachin-kumar-b-10031993" target="_blank">View LinkedIn Profile</a>                                                
@@ -185,52 +197,54 @@
                 <div class="row">
                     <div class="col-md-12 ab-sec">
                         <div class="col-md-6">
-                            <h3 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms"><span>S</span>enior Software Engineer</h3>
+                            <h3 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms"><span>S</span>enior <span>D</span>ata <span>E</span>ngineer</h3>
                             <p>
-                                <span><strong>H</strong></span>i Connections! I'm excited to share a quick update about my career path and current focus. I have 4.2 years 
-                                of professional experience as a Python Developer / Senior Software Engineer, where I worked on real-time applications, production support, 
-                                debugging, performance tuning, and end-to-end delivery.<br><br>
-                                
-                                Along with my past experience in the IT industry, I'm also working as a Freelance Python & Data Science Professional, delivering web applications 
-                                using Python, Django & JavaScript, data analytics dashboards and insights for businesses, machine learning solutions for smarter decision-making, 
-                                and workflow automation and optimization projects.<br><br>
-                                
-                                Recently, I completed the IBM Data Science Professional Certificate and strengthened my hands-on skills in Python, SQL, Machine Learning, 
-                                Data Analytics, and Data Visualization. I am actively looking for opportunities in Python Development, Data Analyst, and 
-                                Data Science roles in Bengaluru with immediate joining availability.
+                                <span><strong>H</strong></span>i Connections! I'm excited to share a quick update about my career path 
+                                and focus. I have 9+ years of experience across corporate Fintech and Insurance domains, combined with strategic 
+                                independent consulting. My background includes leading real-time applications, query performance tuning, and 
+                                robust end-to-end data infrastructure delivery.<br><br>
+
+                                Alongside my corporate tenure, I operate as a Senior Data Engineering Consultant, building multi-terabyte data 
+                                lakehouses and streaming pipelines. My portfolio spans architecting production ETL/ELT pipelines using 
+                                PySpark, Polars, and DuckDB, engineering vectorized machine learning engines, and deploying automated 
+                                database validation mechanisms for enterprise client accounts.<br><br>
+
+                                To validate my analytical skills, I completed the IBM Data Science Professional Certificate, mastering advanced 
+                                data modeling, processing, and visualization frameworks. I am actively seeking Senior Data Engineer opportunities 
+                                in Bengaluru with immediate joining availability to build scalable, business-ready cloud platforms.
                             </p>
                         </div>
                         <div class="col-md-6">
                             <div class="tech-metrics-container">
                                 <div class="tech-metrics">
-                                        <h3><i class="fa fa-calendar"></i> <span class="timer">4.2+</span></h3>
-                                        <h6>Years of Experience</h6>
-                                        <p>Professional IT industry expertise</p>
+                                        <h3><i class="fa fa-calendar"></i> <span class="timer">9+</span></h3>
+                                        <h6>Years of Senior Expertise</h6>
+                                        <p>Combined corporate & data consulting track</p>
                                 </div>
                                 <div class="tech-metrics">
-                                        <h3><i class="fa fa-thumbs-o-up"></i> <span class="timer">15+</span></h3>
-                                        <h6>Client Projects</h6>
-                                        <p>Delivered as freelancer</p>
+                                        <h3><i class="fa fa-database"></i> <span class="timer">3.5</span>x</h3>
+                                        <h6>Query Performance Boost</h6>
+                                        <p>Accelerated via optimized embedded OLAP architecture</p>
                                 </div>
                                 <div class="tech-metrics">
-                                        <h3><i class="fa fa-bar-chart"></i> <span class="timer">25%</span></h3>
-                                        <h6>Efficiency Boost</h6>
-                                        <p>Through data-driven insights</p>
+                                        <h3><i class="fa fa-cubes"></i> <span class="timer">43</span>M+</h3>
+                                        <h6>Daily Payload Streams</h6>
+                                        <p>Processed through vectorized real-time pipelines</p>
                                 </div>
                                 <div class="tech-metrics">
-                                        <h3><i class="fa fa-briefcase fa-6"></i> <span class="timer">67%</span></h3>
-                                        <h6>Projects Successfully Delivered</h6>
-                                        <p>End-to-end professional solutions built</p>
+                                        <h3><i class="fa fa-cloud fa-6"></i> <span class="timer">100</span>%</h3>
+                                        <h6>Cloud Data Schema Integrity</h6>
+                                        <p>Enforced via automated upstream validation filters</p>
                                 </div>
                                 <div class="tech-metrics">
-                                        <h3><i class="fa fa-paper-plane"></i> <span class="timer">153+</span></h3>
-                                        <h6>Problems Solved Successfully</h6>
-                                        <p>Real-world technical challenges resolved</p>
+                                        <h3><i class="fa fa-line-chart"></i> <span class="timer">30</span>%</h3>
+                                        <h6>Reporting Latency Reduction</h6>
+                                        <p>Delivered via cached Parquet warehouse views</p>
                                 </div>
                                 <div class="tech-metrics">
-                                    <h3><i class="fa fa-code"></i> <span class="timer">375201+</span></h3>
-                                    <h6>Production Code Delivered</h6>
-                                    <p>High-quality, scalable software solutions</p>
+                                    <h3><i class="fa fa-server"></i> <span class="timer">8+</span></h3>
+                                    <h6>Enterprise Client Accounts</h6>
+                                    <p>Scalable end-to-end data lakehouses architected</p>
                                 </div>
                             </div>
                         </div>
@@ -244,7 +258,7 @@
             <div class="container">
                 <div class="col-md-10 col-sm-10 col-xs-8">
                     <h3>My Resume</h3>
-                    <p>Python Developer | Data Science & Machine Learning | SQL, Django, Pandas, NumPy | IBM Data Science Certified | Bengaluru</p>
+                    <p>Senior Data Engineer | PySpark, AWS Cloud, Polars, DuckDB, ETL/ELT Pipelines | Multi-Terabyte Platforms | Bengaluru</p>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-4">           
                     <a class="btn-down" href="https://drive.google.com/file/d/1d540D-_2rah2pat4bC7AZRRsCJaWT1-n/view?usp=drive_link" target="_blank">
@@ -254,12 +268,430 @@
             </div>
         </div>
 
+        <!-- Technical-Skills-Section-Start -->
+        <section id="skills">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="heading text-center">
+                            <h2>Core Technica<span>l Competencies</span></h2>
+                            <div class="line"></div>
+                            <p><strong>A</strong>dvanced data architecture, distributed computation, and stream pipelines optimized for multi-terabyte platforms.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row skills-sec">
+                    <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                        <div class="technical skills-box">
+                            <div class="technical-body">
+                                <h5 class="technical-heading">Languages & Core Processing</h5>
+                                <div class="skills-button-container">
+                                    <button class="skill-btn">Python (Advanced)</button>
+                                    <button class="skill-btn">Advanced SQL</button>
+                                    <button class="skill-btn">Apache Spark</button>
+                                    <button class="skill-btn">PySpark</button>
+                                    <button class="skill-btn">Polars ETL</button>
+                                    <button class="skill-btn">C#</button>
+                                    <button class="skill-btn">JavaScript</button>
+                                    <button class="skill-btn">NumPy</button>
+                                    <button class="skill-btn">Pandas</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+                        <div class="technical skills-box">
+                            <div class="technical-body">
+                                <h5 class="technical-heading">Data Architecture & Cloud Systems</h5>
+                                <div class="skills-button-container">
+                                    <button class="skill-btn">AWS Cloud</button>
+                                    <button class="skill-btn">OLAP & OLTP</button>
+                                    <button class="skill-btn">MySQL</button>
+                                    <button class="skill-btn">Data Warehousing</button>
+                                    <button class="skill-btn">Dimensional Modeling</button>
+                                    <button class="skill-btn">SQL Server</button>
+                                    <button class="skill-btn">Kimball Star-Schema Design</button>
+                                    <button class="skill-btn">Conformed Dimensions</button>
+                                    <button class="skill-btn">PostgreSQL</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+                        <div class="technical skills-box">
+                            <div class="technical-body">
+                                <h5 class="technical-heading">Data Pipelines, Governance & BI</h5>
+                                <div class="skills-button-container">
+                                    <button class="skill-btn">ETL/ELT Pipelines</button>
+                                    <button class="skill-btn">Parquet</button>
+                                    <button class="skill-btn">Tableau</button>
+                                    <button class="skill-btn">Stream Simulation</button>
+                                    <button class="skill-btn">Power BI</button>
+                                    <button class="skill-btn">Real-Time Sliding Windows</button>
+                                    <button class="skill-btn">REST APIs</button>
+                                    <button class="skill-btn">Data Governance</button>
+                                    <button class="skill-btn">Data Validation</button>
+                                    <button class="skill-btn">DuckDB Embedded Analytics</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience-Section-Start -->       
+        <section id="experience">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="heading text-center">
+                            <h2>Work Experien<span>ce</span></h2>
+                            <div class="line"></div>
+                            <p><strong>E</strong>ngineered scalable solutions, led teams, and delivered impactful software across full-stack and data-driven projects.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fa fa-rocket"></i>
+                        </div>
+
+                        <div class="timeline-content wow fadeInUp">
+                            <h3>Senior Data Engineering Consultant / Solutions Architect</h3>
+                            <span>10/2020 – 07/2026 | Independent Data Consulting</span>
+                            <ul>
+                                <li>Engineered scalable data architectures for 8+ enterprise FinTech clients.</li>
+                                <li>Automated ingestion pipelines, reducing operational reporting latency by 30%.</li>
+                                <li>Developed vectorized machine learning engines delivering real-time operational insights.</li>
+                                <li>Deployed automated schema validation, securing multi-terabyte system data quality.</li>
+                            </ul>
+
+                            <div class="projects-header">
+                                <h4>Key Projects</h4>
+                                <button class="toggle-projects">View Key Projects</button>
+                            </div>
+    
+                            <div class="experience-projects">
+                                <div class="project-card">
+                                    <h5>Real-Time E-Commerce Anomaly Engine</h5>
+                                    <p>Stream Processing | In-Memory OLAP | Python | Apache Parquet</p>
+                                    <div class="project-btns">
+                                        <a href="#" class="btn-project case-study-btn" data-title="Real-Time E-Commerce Anomaly Engine - Case Study"
+                                            data-content="<h4>Problem</h4>
+                                            <p>E-commerce platforms faced massive processing overhead and delayed latency in identifying transactional checkout failures.</p>
+                                            <p>Traditional batch processing methods caused prolonged security exposures and missed operational anomalies.</p>
+                                            <h4>Solution</h4>
+                                            <p>Engineered an event-driven stream simulation pipeline processing 43M+ daily records leveraging Polars vectorization frames.</p>
+                                            <p>Implemented sub-second low-latency sliding-window analytics using an embedded DuckDB engine for real-time tracking.</p>
+                                            <p>Optimized data storage footprints by exporting partitioned Parquet lakehouse files directly to local storage disks.</p>
+                                            <h4>Impact</h4>
+                                            <p>Accelerated anomaly detection tracking, reducing system incident identification latency times by 45%.</p>
+                                            <p>Dropped ongoing cloud infrastructure processing database costs through optimized columnar file tiering architecture.</p>">Case Study
+                                        </a>
+                                        <a href="#" class="btn-project-outline architecture-btn"
+                                            data-title="Real-Time E-Commerce Anomaly Engine - Architecture"
+                                            data-content="
+                                            <p><strong class='arch-heading'>Data Source:</strong> Synthetic high-throughput e-commerce transaction streams and event logs generated via Faker.</p>
+                                            <p><strong class='arch-heading'>Processing Layer:</strong> In-memory vectorized transformations, real-time filters, and sliding-window aggregations using Polars.</p>
+                                            <p><strong class='arch-heading'>Analytics Layer:</strong> Embedded DuckDB processing engine executing highly optimized sub-second transaction validation queries.</p>
+                                            <p><strong class='arch-heading'>Storage Layer:</strong> Optimized local data lake using partitioned Apache Parquet columnar file storage formats.</p>
+                                            ">Architecture
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="project-card">
+                                    <h5>Automated Financial Market Ingestion Engine</h5>
+                                    <p>Automated Ingestion | Data Quality Assurance | Python | NumPy</p>
+                                    <div class="project-btns">
+                                        <a href="#" class="btn-project case-study-btn" data-title="Automated Financial Market Ingestion Engine - Case Study"
+                                            data-content="<h4>Problem</h4>
+                                            <p>Financial pipelines lacked robust automation, leading to data ingestion failures and unstable tracking of fast-moving market tick feeds.</p>
+                                            <p>Upstream validation errors caused frequent pipeline downtime and compromised historical data consistency.</p>
+                                            <h4>Solution</h4>
+                                            <p>Created autonomous Python-scheduled market ingestion routines, delivering stable, continuous pipeline tracking for tick feeds.</p>
+                                            <p>Formulated automated upstream schema enforcement mechanisms within DuckDB, dropping data processing errors by 60%.</p>
+                                            <p>Processed 100K+ daily algorithmic time-series ticks using NumPy array math to optimize historical backtesting pipelines.</p>
+                                            <h4>Impact</h4>
+                                            <p>Secured zero-downtime transactional safety across core workflows by eliminating upstream ingestion schema data failures.</p>
+                                            <p>Reduced downstream query engineering execution latency by leveraging highly optimized time-series vectorization methods.</p>">Case Study
+                                        </a>
+                                        <a href="#" class="btn-project-outline architecture-btn"
+                                            data-title="Automated Financial Market Ingestion Engine - Architecture"
+                                            data-content="
+                                            <p><strong class='arch-heading'>Data Source:</strong> Real-time financial market tick feeds and daily multi-asset price snapshot payloads.</p>
+                                            <p><strong class='arch-heading'>Orchestration Layer:</strong> Programmatic ingestion routines and custom scheduling scripts managing workflow trigger states.</p>
+                                            <p><strong class='arch-heading'>Validation Layer:</strong> DuckDB relational schema integrity rules enforcing strict constraints prior to physical storage commits.</p>
+                                            <p><strong class='arch-heading'>Computation Layer:</strong> NumPy and Polars array logic executing highly optimized vectorized time-series tick calculations.</p>
+                                            ">Architecture
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="project-card">
+                                    <h5>Enterprise Business Intelligence Data Warehouse</h5>
+                                    <p>Data Warehousing | Kimball Dimensional Modeling | Polars SQL | Star-Schema Design</p>
+                                    <div class="project-btns">
+                                        <a href="#" class="btn-project case-study-btn" data-title="Enterprise Business Intelligence Data Warehouse - Case Study"
+                                            data-content="<h4>Problem</h4>
+                                            <p>Corporate analysts faced significant rendering lag on executive dashboards due to unoptimized, unstructured system logs.</p>
+                                            <p>Ad-hoc reporting workflows required resource-intensive query processing, delaying cross-functional business decisions.</p>
+                                            <h4>Solution</h4>
+                                            <p>Architected a high-performance star-schema data warehouse using DuckDB to isolate facts and dimension layers.</p>
+                                            <p>Transformed 1M+ raw, unstructured system logs into optimized Kimball conformed dimensions using Polars SQL execution frames.</p>
+                                            <p>Created pre-aggregated, analytical views exported to Parquet to optimize corporate dashboard layer caching performance.</p>
+                                            <h4>Impact</h4>
+                                            <p>Accelerated query execution speeds by 3.5x, completely eliminating rendering latency on critical executive dashboards.</p>
+                                            <p>Standardized corporate reporting datasets, enabling seamless, scalable downstream integration for Power BI and Tableau layers.</p>">Case Study
+                                        </a>
+                                        <a href="#" class="btn-project-outline architecture-btn"
+                                            data-title="Enterprise Business Intelligence Data Warehouse - Architecture"
+                                            data-content="
+                                            <p><strong class='arch-heading'>Data Source:</strong> Over 1M+ rows of raw, unstructured enterprise system logs and cross-functional business transactional events.</p>
+                                            <p><strong class='arch-heading'>ETL/ELT Layer:</strong> High-speed Polars SQL execution frames processing structural cleaning, mapping, and metric extractions.</p>
+                                            <p><strong class='arch-heading'>Modeling Layer:</strong> Kimball Dimensional Modeling layout configuring physical Conformed Dimensions and central Fact tables.</p>
+                                            <p><strong class='arch-heading'>Serving Layer:</strong> Highly optimized DuckDB OLAP structures serving pre-aggregated query views cached in Parquet formats.</p>
+                                            ">Architecture
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fa fa-code"></i>
+                        </div>
+
+                        <div class="timeline-content wow fadeInUp">
+                            <h3>Senior Software Engineer</h3>
+                            <span>Novac Technology Solutions | 2018 – 2020</span>
+                            <ul>
+                                <li>Developed Life Insurance web applications using ASP.NET, SQL Server for 5+ projects.</li>
+                                <li>Improved application processing speed by 40% through performance tuning.</li>
+                                <li>Led and mentored team of 9 developers improving delivery speed.</li>
+                            </ul>
+
+                            <div class="projects-header">
+                                <h4>Key Projects</h4>
+                                <button class="toggle-projects">View Key Projects</button>
+                            </div>
+    
+                            <div class="experience-projects">
+                                <div class="project-card">
+                                    <h5>Life Insurance Policy Management System</h5>
+                                    <p>ASP.NET | SQL Server | Insurance Analytics | Enterprise Web Application</p>
+                                    <div class="project-btns">
+                                        <a href="#" class="btn-project case-study-btn" data-title="Life Insurance Policy Management System - Case Study"
+                                            data-content="<h4>Problem</h4>
+                                            <p>Insurance companies faced delays managing policy data, claims processing, and customer information across multiple systems.</p>
+                                            <p>Manual workflows caused errors, slow approvals, and poor customer service experience.</p>
+                                            <h4>Solution</h4>
+                                            <p>Developed web application using ASP.NET, C#, and SQL Server for policy lifecycle management.</p>
+                                            <p>Implemented modules for policy creation, customer records, claims processing, and reporting.</p>
+                                            <p>Optimized database queries and automated policy status tracking workflows.</p>
+                                            <h4>Impact</h4>
+                                            <p>Improved processing efficiency by 41%, reducing policy approval and claims handling time.</p>
+                                            <p>Increased system reliability and data accuracy across insurance operations.</p>
+                                            <p>Enhanced customer service through faster policy updates and tracking.</p>">Case Study
+                                        </a>
+                                        <a href="#" class="btn-project-outline architecture-btn"
+                                            data-title="Life Insurance Policy Management System - Architecture"
+                                            data-content="
+                                            <p><strong class='arch-heading'>Frontend:</strong> ASP.NET web interface for policy management and user access.</p>
+                                            <p><strong class='arch-heading'>Backend:</strong> C# business logic handling policy workflows and claims processing.</p>
+                                            <p><strong class='arch-heading'>Database:</strong> SQL Server storing policy, customer, and transaction data.</p>
+                                            <p><strong class='arch-heading'>Reporting:</strong> Analytics dashboards and automated status tracking system.</p>
+                                            ">Architecture
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="project-card">
+                                    <h5>Claims Processing Automation</h5>
+                                    <p>Process Automation | Insurance Analytics | ASP.NET | SQL Server</p>
+                                    <div class="project-btns">
+                                        <a href="#" class="btn-project case-study-btn" data-title="Claims Processing Automation - Case Study"
+                                            data-content="<h4>Problem</h4>
+                                            <p>Insurance claim processing involved manual verification, causing delays, errors, and inefficient claim settlement cycles.</p>
+                                            <p>Lack of automated tracking reduced transparency and slowed decision-making.</p>
+                                            <h4>Solution</h4>
+                                            <p>Developed automated claims processing system using ASP.NET, C#, and SQL Server.</p>
+                                            <p>Implemented workflow automation for claim submission, validation, approval, and status tracking.</p>
+                                            <p>Integrated database-driven verification and reporting modules.</p>
+                                            <h4>Impact</h4>
+                                            <p>Reduced claim processing time by 45%, improving operational efficiency and customer satisfaction.</p>
+                                            <p>Increased claim accuracy and minimized manual errors in verification processes.</p>
+                                            <p>Enabled real-time claim tracking for stakeholders and insurance teams.</p>">Case Study
+                                        </a>
+                                        <a href="#" class="btn-project-outline architecture-btn"
+                                            data-title="Claims Processing Automation - Architecture"
+                                            data-content="
+                                            <p><strong class='arch-heading'>Data Source:</strong> Insurance claims data and policyholder information.</p>
+                                            <p><strong class='arch-heading'>Application Layer:</strong> ASP.NET system managing claims workflow automation.</p>
+                                            <p><strong class='arch-heading'>Database Layer:</strong> SQL Server storing claims records and verification data.</p>
+                                            <p><strong class='arch-heading'>Reporting Layer:</strong> Automated claim status tracking and analytics dashboards.</p>
+                                            ">Architecture
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="project-card">
+                                    <h5>Internal Reporting Dashboard</h5>
+                                    <p>Power BI | Business Intelligence | Data Visualization | SQL Analytics</p>
+                                    <div class="project-btns">
+                                        <a href="#" class="btn-project case-study-btn" data-title="Internal Reporting Dashboard - Case Study"
+                                            data-content="<h4>Problem</h4>
+                                            <p>Teams relied on manual Excel reports, causing delays, inconsistent data, and limited visibility into operational performance.</p>
+                                            <p>Leadership lacked real-time insights for monitoring KPIs and department productivity.</p>
+                                            <h4>Solution</h4>
+                                            <p>Built interactive dashboard using Power BI, SQL, and data modeling techniques.</p>
+                                            <p>Automated data extraction, transformation, and scheduled refresh pipelines.</p>
+                                            <p>Designed KPI metrics, performance trends, and department-level analytics visuals.</p>
+                                            <h4>Impact</h4>
+                                            <p>Reduced report preparation time by 55%, improving operational efficiency.</p>
+                                            <p>Enabled real-time performance tracking across departments and leadership teams.</p>
+                                            <p>Improved decision-making speed by 35% through centralized analytics dashboards.</p>">Case Study
+                                        </a>
+                                        <a href="#" class="btn-project-outline architecture-btn"
+                                            data-title="Internal Reporting Dashboard - Architecture"
+                                            data-content="
+                                            <p><strong class='arch-heading'>Data Source:</strong> SQL databases and internal operational datasets.</p>
+                                            <p><strong class='arch-heading'>Data Processing:</strong> Data cleaning, transformation, and modeling using Power Query.</p>
+                                            <p><strong class='arch-heading'>Visualization Layer:</strong> Power BI dashboards with KPIs and trend analysis.</p>
+                                            <p><strong class='arch-heading'>Access Layer:</strong> Secure role-based access for management and internal teams.</p>
+                                            ">Architecture
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fa fa-cloud"></i>
+                        </div>
+
+                        <div class="timeline-content wow fadeInUp">
+                            <h3>Software Engineer</h3>
+                            <span>Brevera Technologies | 2015 – 2017</span>
+                            <ul>
+                                <li>Designed embedded testing kits for electronics products improving reliability by 30%.</li>
+                                <li>Automated testing systems using C# applications reducing testing time by 41%.</li>
+                                <li>Contributed to 11+ successful product launches improving quality and efficiency.</li>
+                            </ul>
+
+                            <div class="projects-header">
+                                <h4>Key Projects</h4>
+                                <button class="toggle-projects">View Key Projects</button>
+                            </div>
+    
+                            <div class="experience-projects">
+                                <div class="project-card">
+                                    <h5>Embedded Product Testing System</h5>
+                                    <p>Embedded Systems | Hardware Testing | C Automation | Electronics</p>
+                                    <div class="project-btns">
+                                        <a href="#" class="btn-project case-study-btn" data-title="Embedded Product Testing System - Case Study"
+                                            data-content="<h4>Problem</h4>
+                                            <p>Manual hardware testing caused inconsistent results, delayed product validation, and increased testing effort.</p>
+                                            <h4>Solution</h4>
+                                            <p>Designed automated testing system using Embedded C, electronics testing modules, and embedded validation workflows.</p>
+                                            <p>Implemented real-time device monitoring and automated result logging.</p>
+                                            <p>Built scalable testing framework for multiple electronic products.</p>
+                                            <h4>Impact</h4>
+                                            <p>Reduced testing time by 43%, improving product validation efficiency.</p>
+                                            <p>Increased testing accuracy and reliability across hardware devices.</p>
+                                            <p>Supported 13+ product launches with automated validation processes.</p>">Case Study
+                                        </a>
+                                        <a href="#" class="btn-project-outline architecture-btn"
+                                            data-title="Embedded Product Testing System - Architecture"
+                                            data-content="
+                                            <p><strong class='arch-heading'>Hardware Layer:</strong> Embedded electronic devices and testing modules.</p>
+                                            <p><strong class='arch-heading'>Control Layer:</strong> Embedded C application managing automated test execution.</p>
+                                            <p><strong class='arch-heading'>Data Layer:</strong> Test results storage and device performance logs.</p>
+                                            <p><strong class='arch-heading'>Monitoring Layer:</strong> Real-time validation and system diagnostics.</p>
+                                            ">Architecture
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="project-card">
+                                    <h5>Electronic Weighing Scale Board</h5>
+                                    <p>Embedded Hardware Design | PCB Development | Sensor Integration | Electronics</p>
+                                    <div class="project-btns">
+                                        <a href="#" class="btn-project case-study-btn" data-title="Electronic Weighing Scale Board - Case Study"
+                                            data-content="<h4>Problem</h4>
+                                            <p>Traditional weighing systems lacked precision, stability, and scalable embedded hardware design.</p>
+                                            <h4>Solution</h4>
+                                            <p>Designed PCB board integrating load sensors, microcontroller, and signal processing components.</p>
+                                            <p>Implemented calibration logic for accurate weight measurement.</p>
+                                            <p>Optimized circuit design for stability and reliable performance.</p>
+                                            <h4>Impact</h4>
+                                            <p>Improved measurement accuracy by 35%, ensuring reliable weight calculations.</p>
+                                            <p>Enhanced device stability and operational efficiency in commercial usage.</p>
+                                            <p>Supported scalable integration with embedded weighing systems.</p>">Case Study
+                                        </a>
+                                        <a href="#" class="btn-project-outline architecture-btn"
+                                            data-title="Electronic Weighing Scale Board - Architecture"
+                                            data-content="
+                                            <p><strong class='arch-heading'>Sensor Layer:</strong> Load cells capturing weight measurements.</p>
+                                            <p><strong class='arch-heading'>Processing Layer:</strong> Microcontroller handling signal processing and calibration.</p>
+                                            <p><strong class='arch-heading'>Hardware Layer:</strong> Custom PCB board and electronic circuit components.</p>
+                                            <p><strong class='arch-heading'>Output Layer:</strong> Display interface and system integration modules.</p>
+                                            ">Architecture
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="project-card">
+                                    <h5>Database Development Using Python</h5>
+                                    <p>Python | SQL | Data Engineering | Backend Development</p>
+                                    <div class="project-btns">
+                                        <a href="#" class="btn-project case-study-btn" data-title="Database Development Using Python - Case Study"
+                                            data-content="<h4>Problem</h4>
+                                            <p>Businesses struggled managing large datasets due to inefficient database design and manual data handling.</p>
+                                            <h4>Solution</h4>
+                                            <p>Developed database solutions using Python, SQL, and automated data processing scripts.</p>
+                                            <p>Implemented CRUD operations, data validation, and database optimization.</p>
+                                            <p>Integrated backend systems for efficient data storage and retrieval.</p>
+                                            <h4>Impact</h4>
+                                            <p>Improved database performance by 67%, reducing query execution time.</p>
+                                            <p>Enhanced data management efficiency and system scalability.</p>
+                                            <p>Automated data workflows, minimizing manual processing errors.</p>">Case Study
+                                        </a>
+                                        <a href="#" class="btn-project-outline architecture-btn"
+                                            data-title="Database Development Using Python - Architecture"
+                                            data-content="
+                                            <p><strong class='arch-heading'>Data Layer:</strong> Structured database using SQL for data storage.</p>
+                                            <p><strong class='arch-heading'>Application Layer:</strong> Python scripts managing database operations.</p>
+                                            <p><strong class='arch-heading'>Processing Layer:</strong> Data validation and transformation workflows.</p>
+                                            <p><strong class='arch-heading'>Integration Layer:</strong> Backend systems connecting applications and database.</p>
+                                            ">Architecture
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Experience-Section-End -->
+
         <!--Service-Section-Start-->
         <section id="service">
             <div class="container">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="heading">
-                        <h2>Core Technica<span>l Competencies</span></h2>
+                        <h2>Profession<span>al Projects</span></h2>
                         <div class="line"></div>
                         <p><span><strong>F</strong></span>ull-stack developer skilled in Python, ML, .NET, SQL, and data-driven decision-making expertise.</p>
                     </div>
@@ -360,346 +792,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Experience-Section-Start -->       
-        <section id="experience">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="heading text-center">
-                            <h2>Work Experien<span>ce</span></h2>
-                            <div class="line"></div>
-                            <p><strong>E</strong>ngineered scalable solutions, led teams, and delivered impactful software across full-stack and data-driven projects.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-icon">
-                            <i class="fa fa-rocket"></i>
-                        </div>
-
-                        <div class="timeline-content wow fadeInUp">
-                            <h3>Freelance Data Science & Development</h3>
-                            <span>October 2020 – Present | Self-Employed</span>
-                            <ul>
-                                <li>Delivered predictive analytics solutions for 7+ clients using Python.</li>
-                                <li>Built automation dashboards improving operational efficiency by 25%.</li>
-                                <li>Collaborated with tech communities and long-term clients.</li>
-                            </ul>
-
-                            <div class="projects-header">
-                                <h4>Key Projects</h4>
-                                <button class="toggle-projects">View Key Projects</button>
-                            </div>
-    
-                            <div class="experience-projects">
-                                <div class="project-card">
-                                    <h5>Stock Analysis Using Machine Learning</h5>
-                                    <p>Financial Data Analytics | Predictive Modeling | Python | Jupyter Notebook</p>
-                                    <div class="project-btns">
-                                        <a href="#" class="btn-project case-study-btn" data-title="Stock Analysis Using Machine Learning - Case Study"
-                                            data-content="<h4>Problem</h4>
-                                            <p>Investors lacked data-driven insights for predicting stock market trends and minimizing investment risks.</p>
-                                            <p>Manual analysis caused delayed decisions and inaccurate financial forecasting.</p>
-                                            <h4>Solution</h4>
-                                            <p>Built predictive models using Python, Pandas, NumPy, and Scikit-learn for stock price forecasting.</p>
-                                            <p>Performed data preprocessing, feature engineering, and model evaluation using Jupyter Notebook.</p>
-                                            <p>Visualized stock trends and correlations using Seaborn and financial datasets.</p>
-                                            <h4>Impact</h4>
-                                            <p>Improved prediction accuracy by 37%, enabling faster investment decision-making.</p>
-                                            <p>Reduced manual analysis time by 45% through automated data processing workflows.</p>">Case Study
-                                        </a>
-                                        <a href="#" class="btn-project-outline architecture-btn"
-                                            data-title="Stock Analysis Using Machine Learning - Architecture"
-                                            data-content="
-                                            <p>Data Source: Historical stock market datasets and financial indicators.</p>
-                                            <p>Data Processing: Cleaning, normalization, and feature engineering using Python libraries.</p>
-                                            <p>Model Layer: Machine Learning algorithms for predictive analytics and forecasting.</p>
-                                            <p>Visualization: Jupyter Notebook dashboards using Seaborn and data insights reporting.</p>
-                                            ">Architecture
-                                        </a>
-                                    </div>
-                                </div>
-                                
-                                <div class="project-card">
-                                    <h5>Business Insights & Visualization Dashboard</h5>
-                                    <p>Power BI | Data Analytics | KPI Tracking | Business Intelligence</p>
-                                    <div class="project-btns">
-                                        <a href="#" class="btn-project case-study-btn" data-title="Business Insights & Visualization Dashboard - Case Study"
-                                            data-content="<h4>Problem</h4>
-                                            <p>Organizations lacked centralized dashboards for tracking KPIs, sales performance, and operational insights.</p>
-                                            <p>Decision-making was delayed due to manual reporting and scattered data sources.</p>
-                                            <h4>Solution</h4>
-                                            <p>Developed interactive dashboards using Power BI, SQL, and data modeling techniques.</p>
-                                            <p>Integrated multiple datasets and automated data refresh for real-time analytics.</p>
-                                            <p>Designed KPI metrics, filters, and trend analysis visuals for stakeholders.</p>
-                                            <h4>Impact</h4>
-                                            <p>Reduced reporting time by 61%, enabling faster executive decision-making.</p>
-                                            <p>Improved data visibility across teams, increasing productivity by 31%.</p>
-                                            <p>Enabled real-time monitoring of sales, revenue, and business performance.</p>">Case Study
-                                        </a>
-                                        <a href="#" class="btn-project-outline architecture-btn"
-                                            data-title="Business Insights & Visualization Dashboard - Architecture"
-                                            data-content="
-                                            <p>Data Source: SQL databases, business datasets, and operational data systems.</p>
-                                            <p>Data Processing: Data cleaning, transformation, and modeling using Power Query.</p>
-                                            <p>Visualization Layer: Interactive Power BI dashboards with KPIs and analytics.</p>
-                                            <p>Business Users: Executives and analysts accessing insights for strategic decisions.</p>
-                                            ">Architecture
-                                        </a>
-                                    </div>
-                                </div>
-                                
-                                <div class="project-card">
-                                    <h5>Customer Churn Prediction</h5>
-                                    <p>Customer Analytics | Predictive Modeling | Classification | Python</p>
-                                    <div class="project-btns">
-                                        <a href="#" class="btn-project case-study-btn" data-title="Customer Churn Prediction - Case Study"
-                                            data-content="<h4>Problem</h4>
-                                            <p>Telecom and subscription businesses faced high customer churn, reducing retention and long-term revenue.</p>
-                                            <h4>Solution</h4>
-                                            <p>Developed classification models using Logistic Regression, Decision Trees, and Scikit-learn.</p>
-                                            <p>Implemented feature selection and customer behavior analysis.</p>
-                                            <h4>Impact</h4>
-                                            <p>Achieved 85% prediction accuracy, enabling proactive retention strategies and reducing churn by 25%.</p>">Case Study
-                                        </a>
-                                        <a href="#" class="btn-project-outline architecture-btn"
-                                            data-title="Customer Churn Prediction - Architecture"
-                                            data-content="
-                                            <p>Data Source: Customer transaction and behavioral datasets.</p>
-                                            <p>Data Pipeline: Data cleaning, transformation, and feature selection.</p>
-                                            <p>Model Layer: Classification algorithms and evaluation metrics.</p>
-                                            <p>Deployment: Predictions integrated into analytics dashboards.</p>
-                                            ">Architecture
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-icon">
-                            <i class="fa fa-code"></i>
-                        </div>
-
-                        <div class="timeline-content wow fadeInUp">
-                            <h3>Senior Software Engineer</h3>
-                            <span>Novac Technology Solutions | 2018 – 2020</span>
-                            <ul>
-                                <li>Developed Life Insurance web applications using ASP.NET, SQL Server for 5+ projects.</li>
-                                <li>Improved application processing speed by 40% through performance tuning.</li>
-                                <li>Led and mentored team of 9 developers improving delivery speed.</li>
-                            </ul>
-
-                            <div class="projects-header">
-                                <h4>Key Projects</h4>
-                                <button class="toggle-projects">View Key Projects</button>
-                            </div>
-    
-                            <div class="experience-projects">
-                                <div class="project-card">
-                                    <h5>Life Insurance Policy Management System</h5>
-                                    <p>ASP.NET | SQL Server | Insurance Analytics | Enterprise Web Application</p>
-                                    <div class="project-btns">
-                                        <a href="#" class="btn-project case-study-btn" data-title="Life Insurance Policy Management System - Case Study"
-                                            data-content="<h4>Problem</h4>
-                                            <p>Insurance companies faced delays managing policy data, claims processing, and customer information across multiple systems.</p>
-                                            <p>Manual workflows caused errors, slow approvals, and poor customer service experience.</p>
-                                            <h4>Solution</h4>
-                                            <p>Developed web application using ASP.NET, C#, and SQL Server for policy lifecycle management.</p>
-                                            <p>Implemented modules for policy creation, customer records, claims processing, and reporting.</p>
-                                            <p>Optimized database queries and automated policy status tracking workflows.</p>
-                                            <h4>Impact</h4>
-                                            <p>Improved processing efficiency by 41%, reducing policy approval and claims handling time.</p>
-                                            <p>Increased system reliability and data accuracy across insurance operations.</p>
-                                            <p>Enhanced customer service through faster policy updates and tracking.</p>">Case Study
-                                        </a>
-                                        <a href="#" class="btn-project-outline architecture-btn"
-                                            data-title="Life Insurance Policy Management System - Architecture"
-                                            data-content="
-                                            <p>Frontend: ASP.NET web interface for policy management and user access.</p>
-                                            <p>Backend: C# business logic handling policy workflows and claims processing.</p>
-                                            <p>Database: SQL Server storing policy, customer, and transaction data.</p>
-                                            <p>Reporting: Analytics dashboards and automated status tracking system.</p>
-                                            ">Architecture
-                                        </a>
-                                    </div>
-                                </div>
-                                
-                                <div class="project-card">
-                                    <h5>Claims Processing Automation</h5>
-                                    <p>Process Automation | Insurance Analytics | ASP.NET | SQL Server</p>
-                                    <div class="project-btns">
-                                        <a href="#" class="btn-project case-study-btn" data-title="Claims Processing Automation - Case Study"
-                                            data-content="<h4>Problem</h4>
-                                            <p>Insurance claim processing involved manual verification, causing delays, errors, and inefficient claim settlement cycles.</p>
-                                            <p>Lack of automated tracking reduced transparency and slowed decision-making.</p>
-                                            <h4>Solution</h4>
-                                            <p>Developed automated claims processing system using ASP.NET, C#, and SQL Server.</p>
-                                            <p>Implemented workflow automation for claim submission, validation, approval, and status tracking.</p>
-                                            <p>Integrated database-driven verification and reporting modules.</p>
-                                            <h4>Impact</h4>
-                                            <p>Reduced claim processing time by 45%, improving operational efficiency and customer satisfaction.</p>
-                                            <p>Increased claim accuracy and minimized manual errors in verification processes.</p>
-                                            <p>Enabled real-time claim tracking for stakeholders and insurance teams.</p>">Case Study
-                                        </a>
-                                        <a href="#" class="btn-project-outline architecture-btn"
-                                            data-title="Claims Processing Automation - Architecture"
-                                            data-content="
-                                            <p>Data Source: Insurance claims data and policyholder information.</p>
-                                            <p>Application Layer: ASP.NET system managing claims workflow automation.</p>
-                                            <p>Database Layer: SQL Server storing claims records and verification data.</p>
-                                            <p>Reporting Layer: Automated claim status tracking and analytics dashboards.</p>
-                                            ">Architecture
-                                        </a>
-                                    </div>
-                                </div>
-                                
-                                <div class="project-card">
-                                    <h5>Internal Reporting Dashboard</h5>
-                                    <p>Power BI | Business Intelligence | Data Visualization | SQL Analytics</p>
-                                    <div class="project-btns">
-                                        <a href="#" class="btn-project case-study-btn" data-title="Internal Reporting Dashboard - Case Study"
-                                            data-content="<h4>Problem</h4>
-                                            <p>Teams relied on manual Excel reports, causing delays, inconsistent data, and limited visibility into operational performance.</p>
-                                            <p>Leadership lacked real-time insights for monitoring KPIs and department productivity.</p>
-                                            <h4>Solution</h4>
-                                            <p>Built interactive dashboard using Power BI, SQL, and data modeling techniques.</p>
-                                            <p>Automated data extraction, transformation, and scheduled refresh pipelines.</p>
-                                            <p>Designed KPI metrics, performance trends, and department-level analytics visuals.</p>
-                                            <h4>Impact</h4>
-                                            <p>Reduced report preparation time by 55%, improving operational efficiency.</p>
-                                            <p>Enabled real-time performance tracking across departments and leadership teams.</p>
-                                            <p>Improved decision-making speed by 35% through centralized analytics dashboards.</p>">Case Study
-                                        </a>
-                                        <a href="#" class="btn-project-outline architecture-btn"
-                                            data-title="Internal Reporting Dashboard - Architecture"
-                                            data-content="
-                                            <p>Data Source: SQL databases and internal operational datasets.</p>
-                                            <p>Data Processing: Data cleaning, transformation, and modeling using Power Query.</p>
-                                            <p>Visualization Layer: Power BI dashboards with KPIs and trend analysis.</p>
-                                            <p>Access Layer: Secure role-based access for management and internal teams.</p>
-                                            ">Architecture
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item">
-                        <div class="timeline-icon">
-                            <i class="fa fa-cloud"></i>
-                        </div>
-
-                        <div class="timeline-content wow fadeInUp">
-                            <h3>Software Engineer</h3>
-                            <span>Brevera Technologies | 2015 – 2017</span>
-                            <ul>
-                                <li>Designed embedded testing kits for electronics products improving reliability by 30%.</li>
-                                <li>Automated testing systems using C# applications reducing testing time by 41%.</li>
-                                <li>Contributed to 11+ successful product launches improving quality and efficiency.</li>
-                            </ul>
-
-                            <div class="projects-header">
-                                <h4>Key Projects</h4>
-                                <button class="toggle-projects">View Key Projects</button>
-                            </div>
-    
-                            <div class="experience-projects">
-                                <div class="project-card">
-                                    <h5>Embedded Product Testing System</h5>
-                                    <p>Embedded Systems | Hardware Testing | C Automation | Electronics</p>
-                                    <div class="project-btns">
-                                        <a href="#" class="btn-project case-study-btn" data-title="Embedded Product Testing System - Case Study"
-                                            data-content="<h4>Problem</h4>
-                                            <p>Manual hardware testing caused inconsistent results, delayed product validation, and increased testing effort.</p>
-                                            <h4>Solution</h4>
-                                            <p>Designed automated testing system using Embedded C, electronics testing modules, and embedded validation workflows.</p>
-                                            <p>Implemented real-time device monitoring and automated result logging.</p>
-                                            <p>Built scalable testing framework for multiple electronic products.</p>
-                                            <h4>Impact</h4>
-                                            <p>Reduced testing time by 43%, improving product validation efficiency.</p>
-                                            <p>Increased testing accuracy and reliability across hardware devices.</p>
-                                            <p>Supported 13+ product launches with automated validation processes.</p>">Case Study
-                                        </a>
-                                        <a href="#" class="btn-project-outline architecture-btn"
-                                            data-title="Embedded Product Testing System - Architecture"
-                                            data-content="
-                                            <p>Hardware Layer: Embedded electronic devices and testing modules.</p>
-                                            <p>Control Layer: Embedded C application managing automated test execution.</p>
-                                            <p>Data Layer: Test results storage and device performance logs.</p>
-                                            <p>Monitoring Layer: Real-time validation and system diagnostics.</p>
-                                            ">Architecture
-                                        </a>
-                                    </div>
-                                </div>
-                                
-                                <div class="project-card">
-                                    <h5>Electronic Weighing Scale Board</h5>
-                                    <p>Embedded Hardware Design | PCB Development | Sensor Integration | Electronics</p>
-                                    <div class="project-btns">
-                                        <a href="#" class="btn-project case-study-btn" data-title="Electronic Weighing Scale Board - Case Study"
-                                            data-content="<h4>Problem</h4>
-                                            <p>Traditional weighing systems lacked precision, stability, and scalable embedded hardware design.</p>
-                                            <h4>Solution</h4>
-                                            <p>Designed PCB board integrating load sensors, microcontroller, and signal processing components.</p>
-                                            <p>Implemented calibration logic for accurate weight measurement.</p>
-                                            <p>Optimized circuit design for stability and reliable performance.</p>
-                                            <h4>Impact</h4>
-                                            <p>Improved measurement accuracy by 35%, ensuring reliable weight calculations.</p>
-                                            <p>Enhanced device stability and operational efficiency in commercial usage.</p>
-                                            <p>Supported scalable integration with embedded weighing systems.</p>">Case Study
-                                        </a>
-                                        <a href="#" class="btn-project-outline architecture-btn"
-                                            data-title="Electronic Weighing Scale Board - Architecture"
-                                            data-content="
-                                            <p>Sensor Layer: Load cells capturing weight measurements.</p>
-                                            <p>Processing Layer: Microcontroller handling signal processing and calibration.</p>
-                                            <p>Hardware Layer: Custom PCB board and electronic circuit components.</p>
-                                            <p>Output Layer: Display interface and system integration modules.</p>
-                                            ">Architecture
-                                        </a>
-                                    </div>
-                                </div>
-                                
-                                <div class="project-card">
-                                    <h5>Database Development Using Python</h5>
-                                    <p>Python | SQL | Data Engineering | Backend Development</p>
-                                    <div class="project-btns">
-                                        <a href="#" class="btn-project case-study-btn" data-title="Database Development Using Python - Case Study"
-                                            data-content="<h4>Problem</h4>
-                                            <p>Businesses struggled managing large datasets due to inefficient database design and manual data handling.</p>
-                                            <h4>Solution</h4>
-                                            <p>Developed database solutions using Python, SQL, and automated data processing scripts.</p>
-                                            <p>Implemented CRUD operations, data validation, and database optimization.</p>
-                                            <p>Integrated backend systems for efficient data storage and retrieval.</p>
-                                            <h4>Impact</h4>
-                                            <p>Improved database performance by 67%, reducing query execution time.</p>
-                                            <p>Enhanced data management efficiency and system scalability.</p>
-                                            <p>Automated data workflows, minimizing manual processing errors.</p>">Case Study
-                                        </a>
-                                        <a href="#" class="btn-project-outline architecture-btn"
-                                            data-title="Database Development Using Python - Architecture"
-                                            data-content="
-                                            <p>Data Layer: Structured database using SQL for data storage.</p>
-                                            <p>Application Layer: Python scripts managing database operations.</p>
-                                            <p>Processing Layer: Data validation and transformation workflows.</p>
-                                            <p>Integration Layer: Backend systems connecting applications and database.</p>
-                                            ">Architecture
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Experience-Section-End -->
 
         <!--Features-Section-Start-->
         <section id="features">
@@ -859,6 +951,61 @@
                 </div>
             </div>
         </section>
+
+        <!-- Projects-Section-Start -->
+        <!-- <section id="projects" hidden>
+            <div class="container">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="heading">
+                        <h2>OTHER PROJEC<span>TS</span></h2>
+                        <div class="line"></div>
+                        <p><span><strong>A</strong></span> collection of real-world development projects showcasing problem-solving skills, modern design practices, and practical experience in building scalable digital solutions.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                        <div class="template-card">
+                            <h3 class="template-title">NeuroAI SaaS Landing Page</h3>
+                            <p class="template-description">Modern AI startup landing page template built with HTML, CSS, and JavaScript.
+                                Includes pricing section, animations, and responsive design.
+                            </p>
+                            <img src="images/Templates/NeuroAI.jpg" alt="NeuroAI Screenshot">
+                            <div class="template-price">
+                                <span class="template-label">Price:</span>
+                                <span class="template-old-amount">$ 49.00</span>
+                                <span class="template-new-amount" data-price="39.00">$ 39.00</span>
+                            </div>
+                            <div class="template-buttons">
+                                <a href="templates/NeuroAI/index.html" class="btn demo-btn">Live Demo</a>
+                                <button class="btn add-to-cart" data-id="neuroai" data-title="NeuroAI SaaS Landing Page" data-price="39">Add To Cart</button>
+                                <button class="btn remove-from-cart" data-id="neuroai">Remove</button>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                        <div class="template-card">
+                            <h3 class="template-title">Indian NSE Stock Prediction</h3>
+                            <p class="template-description">Modern AI startup landing page template built with HTML, CSS, and JavaScript.
+                                Includes pricing section, animations, and responsive design.
+                            </p>
+                            <img src="images/Templates/NeuroAI.jpg" alt="Stock Prediction Screenshot">
+                            <div class="template-price">
+                                <span class="template-label">Price:</span>
+                                <span class="template-old-amount">$ 99.00</span>
+                                <span class="template-new-amount" data-price="79.00">$ 79.00</span>
+                            </div>
+                            <div class="template-buttons">
+                                <a href="templates/StockPredict/index.html" class="btn demo-btn">Live Demo</a>
+                                
+                                <button class="btn add-to-cart" data-id="stockpredict" data-title="Indian NSE Stock Prediction" data-price="79">Add To Cart</button>
+                                <button class="btn remove-from-cart" data-id="stockpredict">Remove</button>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- Projects-Section-Ends -->
 
         <!--Pricing-Section-Start-->
         <!-- <section id="pricing">
@@ -1249,15 +1396,15 @@
                         <div class="col-md-7">
                             <div class="col-sm-7 seek-info">
                                 <h4>Currently Seeking Opportunities</h4>
-                                <p>I am actively looking for opportunities in <span>Python Development, Data Analyst</span>, and <span>Data Science roles</span> in 
-                                    Bengaluru with <span>immediate joining availability</span>. If your team is hiring or if you can refer me to opportunities, 
-                                    I'd be grateful to connect and explore how I can contribute.<br><br>
+                                <p>Actively seeking <span>Senior Data Engineer</span> opportunities in Bengaluru 
+                                    (<span>Immediate Joiner</span>). Ready to leverage my architectural background to build 
+                                    <span>high-scale data infrastructure, PySpark pipelines, and data warehousing</span>.<br><br>
                                 
                                     Thank you for reading and supporting my journey!
                                 </p>
                                 <div class="open-work">
                                     <h5>Open to Work: </h5>
-                                    <p>Python Developer | Data Analyst | Data Science | Bengaluru | Immediate Joining</p>
+                                    <p>Senior Data Engineer | PySpark • AWS Cloud | Bengaluru | Immediate Joining</p>
                                 </div>
                                 <div class="contact-btn">
                                     <a class="btn-down-cv" href="mailto:skumar10031993@gmail.com" target="_blank">Email Me</a>
@@ -1266,22 +1413,19 @@
                             </div>
                             <div class="col-sm-5 address-info">
                                 <div class="address-info-items">
-                                    <h5>Location</h5>
-                                    <p>#3-1014, Asheervad, Samethadka, Puttur Kasaba, Puttur, D.K. - 574201, Karnataka, India</p>
+                                    <h5>Current Location</h5>
+                                    <p><strong>Puttur, Karnataka, India</strong> (Available for immediate onboarding)</p>
                                 </div>
                                 <div class="address-info-items">
-                                    <h5>Mobile</h5>
-                                    <p><a href="tel:919591960073">+91 9591960073</a></p>
+                                    <h5>Target Job Location</h5>
+                                    <p><strong>Bengaluru, Karnataka, India</strong> (Open to immediate relocation / onsite roles)</p>
                                 </div>
                                 <div class="address-info-items">
-                                    <h5>Email</h5>
-                                    <p><a href="mailto:skumar10031993@gmail.com">skumar10031993@gmail.com</a></p>
-                                </div>
-                                <div class="address-info-items">
-                                    <h5>Contact Via</h5>
-                                    <a href="https://wa.me/919591960073"><i class="fa fa-whatsapp"></i></a>
-                                    <a href="https://t.me/sachin_holla"><i class="fa fa-paper-plane"></i></a>
-                                </div>
+                                    <h5>Contact Details</h5>
+                                    <p><a href="tel:919591960073" target="_blank"><i class="fa fa-phone"></i> +919591960073</a></p>
+                                    <p><a href="https://wa.me/919591960073" target="_blank"><i class="fa fa-whatsapp"></i> WhatsApp Chat</a></p>
+                                    <p><a href="mailto:skumar10031993@gmail.com" target="_blank"><i class="fa fa-envelope"></i> skumar10031993@gmail.com</a></p>
+                                </div>                                
                             </div>
                         </div>
                         <div class="col-md-5 map-items">
@@ -1351,6 +1495,28 @@
                 <div id="modalBody" class="modal-body"></div>
             </div>
         </div>
+
+        <!-- View Cart Right Side Popup -->
+        <!-- <div id="cart-sidebar">
+            <div class="cart-header">
+                <h3>Your Cart</h3>
+                <span id="close-cart">&times;</span>
+            </div>
+
+            <div id="cart-items"></div>
+
+            <div class="cart-footer">
+                <div class="cart-total-row">
+                    <span>Total</span>
+                    <span>$ <span id="cart-total">0.00</span></span>
+                </div>
+                <div class="btn-group">                    
+                    <button id="checkout-btn" class="btn buy-btn">Checkout</button>
+                    <div id="paypal-button-container"></div>
+                </div>
+            </div>
+        </div> -->
+
         <!--Jquery-->
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <!--Boostrap-Jquery-->
