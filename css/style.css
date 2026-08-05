@@ -1,7 +1,7 @@
 /* ===========================================================
 	SACHIN KUMAR B
-	FREELANCER/DJANGO/DEV./SSE
-	Copyrighted by Sachin Kumar B @2024
+	SENIOR DATA ENGINEER/DJANGO/DEV./SSE
+	Copyrighted by Sachin Kumar B @2026
 ============================================================== */
 
 :root {
@@ -2342,15 +2342,21 @@ textarea.form-control {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	top:20px;
-	padding: 5px;
+	max-height:60px;
+	padding: 10px;
 	text-align:center;
 }
 
 #footer-down h2 {
 	color: var(--gray-medium-color);
-	margin:20px 0px 40px 0px;
+	margin:40px 0px 40px 0px;
+	font-size: 25px;
 	text-transform:none;
+}
+
+#footer-down p {
+	color: var(--gray-medium-color);
+	margin: 40px 0px;
 }
 
 /*#footer-down ul li {
