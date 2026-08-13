@@ -1,8 +1,8 @@
-/*
-	Cosmix by TEMPLATE STOCK
-	templatestock.co @templatestock
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
+/* ===========================================================
+	SACHIN KUMAR B
+	SENIOR DATA ENGINEER/DJANGO/DEV./SSE
+	Copyrighted by Sachin Kumar B @2026
+============================================================== */
 
 
  /* ==============================================
@@ -505,29 +505,6 @@
     });
 
 /* ===============================================
-        Experience Projects
-    ============================================== */
-    $(document).ready(function () {
-        $(".toggle-projects").click(function () {
-
-            const container = $(this).closest(".timeline-content");
-            const projects = container.find(".experience-projects");
-            const headerTitle = container.find(".projects-header h4");
-            const isOpen = projects.is(":visible");
-
-            $(".experience-projects").slideUp(300);
-            $(".projects-header h4").fadeOut(200);
-            $(".toggle-projects").text("View Key Projects");
-
-            if (!isOpen) {
-                projects.slideDown(300);
-                headerTitle.fadeIn(200);
-                $(this).text("Hide Projects");
-            }
-        });
-    });
-
-/* ===============================================
         Experience Modal Projects
     ============================================== */
     $(document).ready(function () {
@@ -579,4 +556,35 @@
             $percentSpan.hide();
         });
     });
+
+/*  ==============================================
+       Projects Filter Logics
+    ============================================ */
+    $(document).ready(function() {    
+        // 1. Initial State: Hide archive tier items on first page mount
+        $('.filter-item[data-tier="archive"]').hide();
+
+        // 2. Core Intelligent Filter Engine
+        $('.filter-btn').on('click', function() {
+            const $clickedButton = $(this);
+            const filterValue = $clickedButton.data('filter');
+            
+            // 🛠️ FIX: Simply toggle the active class rule; the CSS handles variable variables instantly!
+            $('.filter-btn').removeClass('active');
+            $clickedButton.addClass('active');
+            
+            // Stop ongoing loops to prevent visual jumping animations
+            $('.filter-item').stop(true, true);
+
+            if (filterValue === 'all') {
+                $('.filter-item[data-tier="archive"]').fadeOut(200);
+                $('.filter-item[data-tier="featured"]').fadeIn(300);
+            } else {
+                $('.filter-item').hide();
+                $(`.filter-item[data-company="${filterValue}"]`).fadeIn(350);
+            }
+        });
+    });
+
+
 
