@@ -1225,7 +1225,7 @@ a.btn-down:hover {
 .skill-btn {
 	background-color: var(--gray-medium-color); /* Soft grey background */
     color: var(--primary-text-color); /* Dark grey text for sharp legibility */
-    border: 1px solid var(--gray-light-color); /* Subtle border edge */
+    border: 1px solid var(--shadow-color); /* Subtle border edge */
     padding: 6px 12px; /* Professional spacing inside the button */
     font-size: 12px;
     border-radius: 4px; /* Clean, modern square edges */
@@ -1274,11 +1274,11 @@ a.btn-down:hover {
 }
 
 .media.service-box .pull-left > i {
-	font-size: 24px;
-	height: 64px;
-	line-height: 64px;
+	font-size: 16px;
+	height: 32px;
+	line-height: 32px;
 	text-align: center;
-	width: 64px;
+	width: 32px;
 	border-radius: 100%;
 	color: var(--primary-color);
 	border:1px solid var(--gray-light-color);
@@ -1306,6 +1306,131 @@ a.btn-down:hover {
 
 .media-body p {
 	text-align:justify;
+}
+
+.filter-item[data-tier="archive"] {
+	display: none;
+}
+
+.filter-btn {
+    background: var(--transparent-color);
+    color: var(--primary-color);
+    font-weight: 600;
+    border: 1px solid var(--shadow-color);
+    transition: all 0.25s ease-in-out;
+    margin: 5px; /* Adds healthy micro-spacing when buttons wrap on mobile */
+}
+
+/* Active Highlight Style States */
+.filter-btn.active {
+    background: var(--primary-color);
+    color: var(--primary-text-color); /* Managed cleanly via your storage helper */
+}
+
+/* Smooth Interactive Hover Response */
+.filter-btn:hover {
+    background: var(--hover-color);
+    color: var(--primary-text-color);
+    transform: translateY(-1px);
+}
+
+/* Card baseline structure */
+.project-service-box {
+    margin: 25px 0;
+    padding: 20px;
+    border-radius: 8px;
+    height: 100%;
+    box-shadow: 0 2px 10px var(--shadow-color);
+    display: flex;
+    flex-direction: column;
+    text-align: left; /* Counteracts global text-align: center from #service */
+}
+
+.filter-item {
+    transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+}
+
+/* Flex row container grouping icon + header context */
+.project-header-row {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/* Heading element layout configuration */
+.project-heading {
+    font-weight: bolder;
+    text-align: left;
+    margin: 0 !important;
+}
+
+/* Re-anchoring your explicit icon style templates */
+.project-icon-container > i {
+    font-size: 16px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    width: 32px;
+    border-radius: 100%;
+    color: var(--primary-color);
+    border: 1px solid var(--gray-light-color);
+    position: relative;
+    display: inline-block;
+    transition: background-color 400ms, color 400ms;
+}
+
+/* Retaining your exact iconic rotation framework on hover states */
+.project-service-box:hover .project-icon-container > i {
+    background: var(--hover-color);
+    color: var(--primary-text-color);
+    transform: rotateY(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transition: all 0.5s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+}
+
+/* Clean left-edge text flow layout configuration spanning full width */
+.project-description {
+    text-align: justify;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.project-subheading {
+	color: var(--primary-color);
+	font-weight: 700;
+}
+
+.tech-badge-container {
+	display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* Clean, tight spacing between chips */
+    margin: 12px 0;
+}
+
+.tech-badge {
+	background-color: var(--gray-medium-color); /* Soft grey background */
+    color: var(--primary-text-color); /* Dark grey text for sharp legibility */
+    border: 1px solid var(--gray-light-color); /* Subtle border edge */
+    padding: 6px 12px; /* Professional spacing inside the button */
+    font-size: 12px;
+    border-radius: 4px; /* Clean, modern square edges */
+    cursor: default; /* Non-clickable marker behavior */
+    transition: all 0.2s ease;
+}
+
+.tech-badge:hover {
+    background-color: var(--background-color); /* Darkens slightly on mouse hover */
+    border-color: var(--gray-light-color);
 }
 
 .progress {
@@ -2255,12 +2380,7 @@ a.btn-blg:hover {
 }
 
 /*Contact-stylesheets-include-here*/
-#contact {
-	text-align:center;
-	padding:3% 0% 0% 2%;
-}
-
-.contact-sec-1 {
+/* .contact-sec-1 {
 	text-align:left;
 }
 
@@ -2325,7 +2445,7 @@ textarea.form-control {
 	height: 35px;
 	border-radius: 0;
 	box-shadow: none;
-}
+} */
 
 /*Footer-stylesheets-include-here*/
 #footer {
@@ -3366,9 +3486,74 @@ a.btn-learn:hover {
 }
 /* Spoken Language Stylesheets Ends Here */
 
-/* Contact Us Stylesheets Starts Here */
-.address-info {
-	width: 41%;
+/* Contact Me Stylesheets Starts Here */
+#contact {
+	text-align:center;
+	padding:3% 0% 0% 2%;
+}
+
+.contact-wrap-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.contact-wrap-box {
+    flex-grow: 1;
+    min-width: 280px;
+}
+
+.role-info { 
+	border: 2px solid var(--background-color);
+	border-radius: 10px;
+	padding: 10px 15px;
+	flex-basis: 350px; 
+}
+
+.role-info h4 {
+	text-align: left;
+	text-transform: capitalize;
+	font-weight: bold;
+}
+
+.role-info p {
+	font-size: 14px;
+	text-align: justify;
+}
+
+.role-info p span {
+	font-weight: bolder;
+}
+
+.role-info .contact-btn {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+
+.role-info .contact-btn a {	
+	align-items: center;
+	text-align: center;
+	color: var(--primary-text-color);
+	background: var(--raidal-gradient-color);
+	font-size: 14px;
+	font-weight: bold;
+	padding: 15px;
+	border: 2px solid var(--primary-text-color);
+	border-radius: 10px;
+}
+
+.role-info .contact-btn a:hover {
+	color: var(--neutral-light-color);
+	background: var(--hover-color);
+}
+
+.address-info { 
+	flex-basis: 350px; 
 }
 
 .address-info-items {
@@ -3401,40 +3586,6 @@ a.btn-learn:hover {
 	font-size: 16px;
 }
 
-.map-items {
-	border: 2px solid var(--background-color);
-	border-radius: 10px;
-	padding: 10px 15px;
-	height: 480px;
-}
-
-.map-items iframe {
-	height: 450px;
-	width: 450px;
-}
-
-.seek-info {
-	border: 2px solid var(--background-color);
-	border-radius: 10px;
-	padding: 10px 15px;
-	height: 480px;
-}
-
-.seek-info h4 {
-	text-align: left;
-	text-transform: capitalize;
-	font-weight: bold;
-}
-
-.seek-info p {
-	font-size: 14px;
-	text-align: justify;
-}
-
-.seek-info p span {
-	font-weight: bolder;
-}
-
 .open-work {
 	background: var(--primary-dark-transparent-color);
 	border-radius: 10px;
@@ -3443,27 +3594,18 @@ a.btn-learn:hover {
 	text-align: left;
 }
 
-.seek-info .contact-btn {
-	display: flex;
-	align-items: flex-start;
-	justify-content: space-around;
-}
-
-.seek-info .contact-btn a {	
-	align-items: center;
-	text-align: center;
-	color: var(--primary-text-color);
-	background: var(--raidal-gradient-color);
-	font-size: 14px;
-	font-weight: bold;
-	padding: 15px;
-	border: 2px solid var(--primary-text-color);
+.map-info { 
+	border: 2px solid var(--background-color);
 	border-radius: 10px;
+	flex-basis: 350px; 
 }
 
-.seek-info .contact-btn a:hover {
-	color: var(--neutral-light-color);
-	background: var(--hover-color);
+.map-info iframe {
+	border: 0;
+	width: 100%; 
+	height: 100%; 
+	/* min-height: 320px;  */
+	border-radius: 10px;
 }
 
 /* Contact Us Stylesheets Ends Here */
