@@ -1468,7 +1468,7 @@ a.btn-down:hover {
     background: var(--background-neutral-color);
     padding: 80px 0;
 }
-
+/* 
 .timeline {
     position: relative;
     margin-top: 50px;
@@ -1563,6 +1563,208 @@ a.btn-down:hover {
 
 .timeline-content ul {
     padding-left: 20px;
+} */
+
+/* Horizontal Main Wrapper Properties Layout Rules */
+.exp-horizontal-carousel {
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+    background: var(--gray-dark-color);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 10px 25px -5px var(--shadow-color);
+    border: 1px solid var(--primary-dark-transparent-color);
+}
+
+/* Viewport Boundary Limits Structure Definition Mapping */
+.exp-horizontal-viewport {
+    position: relative;
+    width: 100%;
+    min-height: 250px;
+    overflow: hidden;
+}
+
+.exp-horizontal-track {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* UPDATED: Full-Width Row pushing arrows outwards while centering indicator points */
+.exp-carousel-controls-bottom {
+    display: flex;
+    justify-content: space-between; /* Drives items outward to maximum margins bounds */
+    align-items: center;
+    /* margin-top: 30px; */
+    /* padding-top: 20px; */
+    border-top: 1px solid var(--primary-dark-transparent-color);
+    width: 100%;
+}
+
+.exp-nav-arrow {
+    background: var(--background-color);
+    border: 1px solid var(--primary-dark-transparent-color);
+    color: var(--primary-text-color);
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 4px var(--shadow-color);
+    flex-shrink: 0; /* Prevents arrows layout breaking sizes under viewport constraints */
+}
+
+.exp-nav-arrow:hover {
+    background: var(--hover-color);
+    border-color: var(--hover-color);
+    transform: scale(1.08);
+}
+
+/* Interactive Navigation Indicator Dot Assets Stylings (Centered inside row flex spacing) */
+.exp-carousel-dots {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Instructs pips layout tracker framework to hold dead-center canvas coordinates */
+}
+
+.exp-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--gray-medium-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.exp-dot.active {
+    background: var(--hover-color);
+    width: 24px;
+    border-radius: 4px;
+}
+
+/* Horizontal slide translation rules engine settings */
+.exp-horizontal-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(50px);
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s ease, visibility 0.5s;
+    pointer-events: none;
+}
+
+.exp-horizontal-slide.active {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+/* Dual Column Inside Item Presentation Elements */
+.exp-slide-split-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    align-items: center;
+    min-height: 340px;
+}
+
+/* Inner Text Presentation Elements Styles */
+.exp-slide-details-left ul {
+    list-style: none;
+    padding: 30px;
+    margin: 0;
+    background: var(--secondary-color);
+    border: 1px solid var(--primary-dark-transparent-color);
+    border-radius: 12px;
+}
+
+.exp-slide-details-left li {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 14px;
+    color: var(--primary-text-color);
+    display: flex;
+    align-items: flex-start;
+}
+
+.exp-slide-details-left li:last-child {
+    margin-bottom: 0;
+}
+
+.exp-slide-details-left li i {
+    color: var(--hover-color);
+    font-size: 12px;
+    margin-top: 6px;
+    margin-right: 15px;
+}
+
+.exp-panel-caption {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--gray-light-color);
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+/* Right Meta Panel Styling Elements Configuration */
+.exp-slide-meta-right {
+    border-left: 3px solid var(--hover-color);
+    padding-left: 35px;
+}
+
+.exp-slide-date {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--gray-light-color);
+    letter-spacing: 1px;
+}
+
+.exp-slide-meta-right h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: var(--primary-text-color);
+    line-height: 1.3;
+}
+
+.exp-slide-company {
+    font-size: 14px;
+    color: var(--hover-color);
+    margin: 0;
+}
+
+/* Responsive Adaptive Fallback Framework Rules Overrides */
+@media (max-width: 768px) {
+    .exp-slide-split-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .exp-slide-meta-right {
+        order: -1;
+        border-left: none;
+        border-bottom: 2px solid var(--primary-dark-transparent-color);
+        padding-left: 0;
+        padding-bottom: 15px;
+    }
+    .exp-horizontal-viewport {
+        min-height: auto;
+    }
+    .exp-carousel-controls-bottom {
+        gap: 15px;
+    }
 }
 
 .project-btns {
@@ -2125,89 +2327,6 @@ a.btn-down:hover {
 	color: var(--primary-text-color);
 }
 
-/*Team-stylesheets-include-here*/
-#team {
-	text-align:center;
-	padding:2% 0%;
-}
-
-.team-desc {
-	padding:15px 10px 15px 10px;
-}
-
-.team-main-sec:hover {
-	box-shadow: 0 8px 8px var(--shadow-color);
-	-webkit-transition-duration: 0.3s;
-	-moz-transition-duration: 0.3s;
-	-ms-transition-duration: 0.3s;
-	-o-transition-duration: 0.3s;
-	transition-duration: 0.3s;
-}
-
-.team-sec {
-	border:1px solid var(--neutral-light-color);
-}
-
-.team-main-sec:hover .team-sec {
-	border:1px solid var(--primary-text-color);
-	-webkit-transition-duration: 0.3s;
-	-moz-transition-duration: 0.3s;
-	-ms-transition-duration: 0.3s;
-	-o-transition-duration: 0.3s;
-	transition-duration: 0.3s;
-}
-
-.team-main-sec:hover h5 {
-	color: var(--hover-color);
-}
-
-.team-sec h5 {
-	color: var(--gray-medium-color);
-	text-transform:uppercase;
-}
-
-.team-social-icon {
-	margin-top:20px;
-}
-
-.team-desc ul.team-social-icon li {
-	display:inline-block;
-	padding-right:20px;
-}
-
-.team-desc ul.team-social-icon li a i.fa {
-	font-size:20px;
-	color: var(--gray-light-color);
-}
-
-/* .team-desc ul.team-social-icon li a i.fa:hover.fa-facebook-f {
-	color: var(--facebook-color);
-}
-
-.team-desc ul.team-social-icon li a i.fa:hover.fa-twitter {
-	color: var(--twitter-color);
-}
-
- .team-desc ul.team-social-icon li a i.fa:hover.fa-pinterest-p {
-	color: var(--pinterest-color);
-}
-
-.team-desc ul.team-social-icon li a i.fa:hover.fa-instagram {
-	color: var(--instagram-color);
-}
-
-.team-desc ul.team-social-icon li a i.fa:hover.fa-google-plus {
-	color: var(--gplus-color);
-} */
-
-.team-social-icon li {
-	color: var(--gray-medium-color);
-}
-
-.team-social-icon li:hover {
-	color: var(--hover-color);
-}
-
 /*Testimonials-stylesheets-include-here*/
 #testimonials {
 	background-image:url(../images/Testimonials/01.jpg);
@@ -2378,74 +2497,6 @@ a.btn-blg:hover {
 	-o-transition: all 0.8s;
 	-webkit-transition: all 0.8s;
 }
-
-/*Contact-stylesheets-include-here*/
-/* .contact-sec-1 {
-	text-align:left;
-}
-
-.contact-sec-1 h4 {
-	font-weight:bold;
-}
-
-.contact-sec-1 ul.contact-form li i.fa {
-	color: var(--gray-neutral-color);
-	float:left;
-	margin-right:10px;
-}
-
-.contact-sec-1 ul.contact-form li h6 {
-	font-size:14px;
-	color: var(--gray-neutral-color);
-	margin:0;
-}
-
-.contact-sec-1 ul {
-	padding:0;
-	position: relative;
-	top: 20px;
-}
-
-.contact-sec-1 ul li {
-	display:block;
-	padding-bottom: 30px;
-}
-
-.contact-sec-1 ul li a {
-	color: var(--gray-neutral-color);
-}
-
-.contact-sec-1 ul li a:hover {
-	color: var(--hover-color);
-	-webkit-transition-duration: 0.3s;
-	-moz-transition-duration: 0.3s;
-	-ms-transition-duration: 0.3s;
-	-o-transition-duration: 0.3s;
-	transition-duration: 0.3s;
-}
-
-label {
-	font-size:15px;
-	font-weight:normal;
-	float:left;
-	margin:0px 0px 20px 0px;
-}
-
-.form-group {
-	margin-bottom: 30px;
-}
-
-textarea.form-control {
-	min-height: 120px;
-	resize: none;
-}
-
-.form-control {
-	border: 1px solid var(--neutral-light-color);
-	height: 35px;
-	border-radius: 0;
-	box-shadow: none;
-} */
 
 /*Footer-stylesheets-include-here*/
 #footer {
@@ -3418,74 +3469,6 @@ a.btn-learn:hover {
     margin-top:15px;
 }
 /* Other Projects Stylesheets Ends Here */
-/* Spoken Language Stylesheets Start Here */
-.spoken-lang-info {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.lang-item {
-	padding: 10px 15px;
-	margin-bottom: 10px;
-	color: var(--primary-color);
-	border: 2px solid var(--background-color);
-	border-radius: 10px;
-}
-
-.lang-item:hover {
-	border: 2px solid var(--hover-color);
-}
-
-.lang-item .lang-item-header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	gap: 10px;
-}
-
-.lang-item p {
-	font-size: 15px;
-}
-
-.lang-item p span {
-	padding: 5px;
-	background-color: var(--background-color);
-	color: var(--primary-text-color);
-}
-
-.lang-star-rate {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.stars-outer {
-    position: relative;
-    display: inline-block;
-    font-family: FontAwesome;
-    color: var(--neutral-light-color);
-}
-
-.stars-inner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 0; /* will be set dynamically */
-    color: var(--primary-color);
-}
-
-.stars-outer::before,
-.stars-inner::before {
-    content: "\f005 \f005 \f005 \f005 \f005"; /* 5 stars */
-    font-family: FontAwesome;
-    font-size: 20px;
-}
-/* Spoken Language Stylesheets Ends Here */
-
 /* Contact Me Stylesheets Starts Here */
 #contact {
 	text-align:center;
