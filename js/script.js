@@ -336,49 +336,6 @@
         
         });
     });
-
-/*  ===========================================
-      Contact Form - Submission
-    =========================================== */
-// $(document).ready(function () {
-//   // Handle form submission
-//   $('#main-contact-form').on('submit', function (e) {
-//     e.preventDefault(); // Prevent default form submission
-
-//     // Get form values
-//     const contactFormData = {
-//       name: $('input[name="name"]').val(),
-//       email: $('input[name="email"]').val(),
-//       subject: $('input[name="subject"]').val(),
-//       message: $('textarea[name="message"]').val(),
-//       to_email: 'skumar10031993@gmail.com'
-//     };
-
-//     // Form validation
-//     if (contactFormData.name === '' || contactFormData.email === '' || contactFormData.subject === '' || contactFormData.message === '') {
-//       alert('Please fill all the fields.');
-//       return;
-//     }
-
-//     $.ajax({
-//       url: '/submit-form-endpoint', // Replace with your backend endpoint
-//         type: 'POST',
-//         data: contactFormData,
-//         success: function (response) {
-//           // If form is valid, display a success message (you can customize this further)
-//           alert('Your message has been sent successfully!');
-
-//           // Clear form after submission (optional)
-//           $('#main-contact-form')[0].reset();
-//         },
-//         error: function (error) {
-//           // Handle error response
-//           alert('There was an error sending your message. Please try again later.');
-//         }
-//     });    
-//   });
-// });
-
 /*  =============================================
       Settings Panel
     =========================================== */
@@ -542,22 +499,6 @@
     });
 
 /*  ==============================================
-       Spoken Language Star Ratings
-    ============================================ */
-    $(document).ready(function() {
-        $('.stars-inner').each(function() {
-            var $inner = $(this);
-            var $percentSpan = $inner.find('span');
-            // Get percentage value
-            var percent = parseInt($percentSpan.text());
-            // Set width of stars-inner
-            $inner.css('width', percent + '%');
-            // Optional: hide the percentage text
-            $percentSpan.hide();
-        });
-    });
-
-/*  ==============================================
        Projects Filter Logics
     ============================================ */
     $(document).ready(function() {    
@@ -586,5 +527,73 @@
         });
     });
 
+/*  ==============================================
+       Work Experience Sections
+    ============================================ */
+    $(document).ready(function () {
+        const $slides = $('.exp-horizontal-slide');
+        const totalSlides = $slides.length;
+        let currentSlideIndex = 0;
 
+        // Generate responsive step pagination indicator dots programmatically
+        const $dotsContainer = $('.exp-carousel-dots');
+        if ($dotsContainer.length) {
+            for (let i = 0; i < totalSlides; i++) {
+                const activeClass = i === 0 ? 'active' : '';
+                $dotsContainer.append(`<span class="exp-dot ${activeClass}" data-goto="${i}"></span>`);
+            }
+        }
+
+        const $dots = $('.exp-dot');
+
+        function navigateHorizontalSlide(targetIndex) {
+            if (targetIndex === currentSlideIndex) return;
+
+            // Set layout transition directions vector arrays
+            const directionClass = targetIndex > currentSlideIndex ? '100px' : '-100px';
+            
+            const $currentSlide = $slides.eq(currentSlideIndex);
+            const $nextSlide = $slides.eq(targetIndex);
+
+            // Deactivate current slide view nodes safely
+            $currentSlide.removeClass('active');
+            
+            // Step activate incoming target slide metrics frame
+            $nextSlide.css('transform', `translateX(${directionClass})`);
+            
+            // Force rendering tree validation context refresh line execution
+            $nextSlide.get(0).offsetHeight; 
+
+            $nextSlide.addClass('active').css('transform', 'translateX(0)');
+
+            // Sync interactive dots pagination state tracking metrics
+            $dots.removeClass('active').eq(targetIndex).addClass('active');
+
+            // Update step location reference values
+            currentSlideIndex = targetIndex;
+        }
+
+        // ACTION EVENT BINDING: Forward Tracking Next Arrow Click Anchor
+        $('#next-exp-btn').on('click', function (e) {
+            e.preventDefault();
+            let nextIndex = currentSlideIndex + 1;
+            if (nextIndex >= totalSlides) nextIndex = 0; // Rotates loop cycling fallback cap
+            navigateHorizontalSlide(nextIndex);
+        });
+
+        // ACTION EVENT BINDING: Reverse Backward Prev Arrow Click Anchor
+        $('#prev-exp-btn').on('click', function (e) {
+            e.preventDefault();
+            let prevIndex = currentSlideIndex - 1;
+            if (prevIndex < 0) prevIndex = totalSlides - 1; // Rotates back loop cycling tracking cap
+            navigateHorizontalSlide(prevIndex);
+        });
+
+        // ACTION EVENT BINDING: Direct Navigation Pips Indicator Node Clicks Hub
+        $dots.on('click', function (e) {
+            e.preventDefault();
+            const targetTargetIndex = parseInt($(this).attr('data-goto'), 10);
+            navigateHorizontalSlide(targetTargetIndex);
+        });
+    });
 
